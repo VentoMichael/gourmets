@@ -1,45 +1,25 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M300.321,147.234V15.128C300.321,6.773,293.547,0,285.192,0h-58.384c-8.355,0-15.128,6.773-15.128,15.128v132.106
-			c-34.292,15.966-56.653,50.448-56.653,88.955v260.683c0,8.355,6.773,15.128,15.128,15.128h171.689
-			c8.355,0,15.128-6.773,15.128-15.128V236.189C356.974,197.682,334.612,163.201,300.321,147.234z M241.937,30.256h28.127v23.026
-			h-28.127V30.256z M185.285,236.189c0-29.226,18.619-55.098,46.33-64.381c6.166-2.065,10.322-7.841,10.322-14.345V83.539h28.127
-			v73.924c0,6.503,4.156,12.279,10.322,14.345c27.712,9.284,46.331,35.156,46.331,64.381v20.819H185.285V236.189z M326.717,481.744
-			H185.285v-67.402h141.432V481.744z M326.717,384.085H185.285v-96.82h141.432V384.085z"/>
+<style type="text/css">
+	.st0{fill:url(#Shape_1_);stroke:#FFFFFF;stroke-width:0.75;}
+</style>
+<title>Shape</title>
+<g id="Page-1">
+	<g id="Desktop-exposant-hover-search" transform="translate(-677.000000, -1139.000000)">
+		<g id="wine" transform="translate(678.000000, 1140.000000)">
+			
+				<linearGradient id="Shape_1_" gradientUnits="userSpaceOnUse" x1="-41.443" y1="645.0297" x2="-33.2299" y2="645.0297" gradientTransform="matrix(24 0 0 -61 1151.0724 39601.8047)">
+				<stop  offset="0" style="stop-color:#210050"/>
+				<stop  offset="1" style="stop-color:#4C0030"/>
+			</linearGradient>
+			<path id="Shape" class="st0" d="M298.3,148.6V19.3c0-8.2-6.6-14.8-14.8-14.8h-57c-8.2,0-14.8,6.6-14.8,14.8v129.3
+				c-33.5,15.6-55.3,49.4-55.3,87v255.1c0,8.2,6.6,14.8,14.8,14.8h167.6c8.2,0,14.8-6.6,14.8-14.8V235.6
+				C353.6,197.9,331.7,164.2,298.3,148.6z M241.3,34.1h27.5v22.5h-27.5V34.1z M186,235.6c0-28.6,18.2-53.9,45.2-63
+				c6-2,10.1-7.7,10.1-14V86.2h27.5v72.3c0,6.4,4.1,12,10.1,14c27,9.1,45.2,34.4,45.2,63V256H186V235.6z M324,475.9H186v-66h138
+				V475.9z M324,380.3H186v-94.7h138V380.3z"/>
+		</g>
 	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
 </g>
 </svg>

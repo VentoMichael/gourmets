@@ -1,0 +1,466 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: loraB;
+    src: url(../resources/font/lora/lora-bold-webfont.eot);
+    src: url(../resources/font/lora/lora-bold-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../resources/font/lora/lora-bold-webfont.woff2) format('woff2'),
+    url(../resources/font/lora/lora-bold-webfont.woff) format('woff'),
+    url(../resources/font/lora/lora-bold-webfont.ttf) format('truetype'),
+    url(../resources/font/lora/lora-bold-webfont.svg#loraB) format('svg')
+}
+
+@font-face {
+    font-family: loraI;
+    src: url(../resources/font/lora/lora-italic-webfont.eot);
+    src: url(../resources/font/lora/lora-italic-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../resources/font/lora/lora-italic-webfont.woff2) format('woff2'),
+    url(../resources/font/lora/lora-italic-webfont.woff) format('woff'),
+    url(../resources/font/lora/lora-italic-webfont.ttf) format('truetype'),
+    url(../resources/font/lora/lora-italic-webfont.svg#loraB) format('svg')
+}
+
+@font-face {
+    font-family: opensansB;
+    src: url(../resources/font/open-sans/opensans-bold-webfont.eot);
+    src: url(../resources/font/open-sans/opensans-bold-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../resources/font/open-sans/opensans-bold-webfont.woff2) format('woff2'),
+    url(../resources/font/open-sans/opensans-bold-webfont.woff) format('woff'),
+    url(../resources/font/open-sans/opensans-bold-webfont.ttf) format('truetype'),
+    url(../resources/font/open-sans/opensans-bold-webfont.svg#loraB) format('svg')
+}
+
+@font-face {
+    font-family: opensansI;
+    src: url(../resources/font/open-sans/opensans-regular-webfont.eot);
+    src: url(../resources/font/open-sans/opensans-regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../resources/font/open-sans/opensans-regular-webfont.woff2) format('woff2'),
+    url(../resources/font/open-sans/opensans-regular-webfont.woff) format('woff'),
+    url(../resources/font/open-sans/opensans-regular-webfont.ttf) format('truetype'),
+    url(../resources/font/open-sans/opensans-regular-webfont.svg#loraB) format('svg')
+}
+
+:root {
+    --purpleGradient: linear-gradient(90deg, rgba(32, 0, 80, 1) 0%, rgba(78, 0, 47, 1) 100%);
+    --shadow: 0 0 30px rgba(228, 228, 228, .6);
+}
+
+h1, h2, h3, .containerTitle span {
+    font-family: "loraB", 'sans-serif';
+}
+
+p {
+    line-height: 1.6;
+}
+
+.current_page_item a {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.containerHome {
+    box-shadow: var(--shadow);
+    padding: 2rem 1rem;
+}
+
+.btnTickets {
+    background: var(--purpleGradient);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+}
+
+.btnCta {
+    background: var(--purpleGradient);
+    color: white;
+    display: block;
+    padding: 20px;
+    font-size: 1.3rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.btnCta:after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 15px;
+    background: url(../resources/svg/arrow.svg) no-repeat center;
+    background-size: 100%;
+    top: calc(50% - 6px);
+}
+
+.containerTitleHome {
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.containerTitleHome span {
+    font-size: .7em;
+    line-height: 1.4;
+}
+
+.textTitle {
+    line-height: 1.5rem;
+}
+
+.logoFooter {
+    max-width: 120px;
+    margin: 0 auto;
+}
+.logoFcb{
+    max-width: 40px;
+}
+.actualityFooter{
+    display: flex;
+    align-items: center;
+}
+.containerActualityFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.containerPracticalInformation img{
+    max-width: 40px;
+}
+.containerPracticalInformation section {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin: 0 1rem;
+}
+
+.containerPracticalInformation section {
+    margin: 50px 0;
+}
+
+.containerPracticalInformation h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.pictoPriceFooter, .pictoDateFooter, .pictoLocationFooter {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.pictoPriceFooter {
+    background: url(../resources/svg/price-tag.svg) no-repeat center;
+}
+
+.pictoDateFooter {
+    background: url(../resources/svg/calendar.svg) no-repeat center;
+}
+
+.pictoLocationFooter {
+    background: url(../resources/svg/placeholder.svg) no-repeat center;
+}
+
+.containerPresentationHome .logo {
+    display: none;
+}
+.containerPresentationHome{
+    margin-top: 100px;
+}
+
+.containerTicketsHome {
+    position: relative;
+}
+
+.ctaTickets {
+    padding: 12px;
+    top: 100px;
+    border-radius: 5px;
+    background: var(--purpleGradient);
+    color: transparent;
+    position: fixed;
+    right: -5px;
+    width: 35px;
+    text-indent: -9999px;
+    transition: .3s;
+    font-weight: bold;
+    letter-spacing: .6px;
+}
+
+.ctaTicketsHover {
+    width: 100px;
+    color: white;
+    text-indent: 30px;
+}
+
+.ctaTickets:after {
+    content: "";
+    background-image: url(../resources/svg/tickets-white.svg);
+    background-repeat: no-repeat;
+    height: 25px;
+    background-position: center;
+    width: 25px;
+    display: block;
+    background-size: 100%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 80rem;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.brand {
+    font-family: inherit;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: inherit;
+    color: #148cb8;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+
+.containerTitle span {
+    font-size: 1.2rem;
+}
+
+.containerTitle {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.marketTitle {
+    position: absolute;
+    right: 15px;
+}
+
+.marketTitle span {
+    font-size: 1.4rem;
+}
+
+.containerTextHome {
+    margin: 40px 0;
+    margin-bottom: 10px;
+}
+
+.containerTextHome p {
+    margin: 30px 0;
+}
+
+.containerImagesHome {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 10px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    color: #252a32;
+    background: #fff;
+    position: fixed;
+    z-index: 1;
+    box-shadow: var(--shadow);
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+.navbar .navbrand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbrand .burger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transition: all 0.35s ease;
+}
+
+.menu li {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.navbar .navbrand .burger-close {
+    display: none;
+}
+
+ul .containerBtnTickets {
+    margin-top: 40px;
+}
+
+.navbar .navbrand .burger.active .burger-open {
+    display: none;
+}
+
+.navbar .navbrand .burger.active .burger-close {
+    display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar .navbrand .burger {
+        display: none;
+    }
+}
+
+.navbar .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.navbar .menu-item {
+    margin: 0.5rem 0;
+}
+
+.navbar .menu-link {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    color: #252a32;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    transition: all 0.35s ease;
+}
+
+.navbar .menu-link:hover {
+    color: #148cb8;
+}
+
+.navbar .menu.active {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .navbar .menu-item {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+}
+
+.navbar .social {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .social-item {
+    font-size: 1.65rem;
+    line-height: inherit;
+    margin: 0 0.5rem;
+    color: #252a32;
+    transition: all 0.35s ease;
+}
+
+.navbar .social-item:hover {
+    color: #148cb8;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar .social {
+        display: flex;
+    }
+}
