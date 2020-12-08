@@ -69,6 +69,16 @@ table {
 }
 
 @font-face {
+    font-family: opensans;
+    src: url(../resources/font/open-sans/opensans-regular-webfont.eot);
+    src: url(../resources/font/open-sans/opensans-regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../resources/font/open-sans/opensans-regular-webfont.woff2) format('woff2'),
+    url(../resources/font/open-sans/opensans-regular-webfont.woff) format('woff'),
+    url(../resources/font/open-sans/opensans-regular-webfont.ttf) format('truetype'),
+    url(../resources/font/open-sans/opensans-regular-webfont.svg#loraB) format('svg')
+}
+
+@font-face {
     font-family: opensansB;
     src: url(../resources/font/open-sans/opensans-bold-webfont.eot);
     src: url(../resources/font/open-sans/opensans-bold-webfont.eot?#iefix) format('embedded-opentype'),
@@ -89,45 +99,92 @@ table {
 }
 
 :root {
-    --purpleGradient: linear-gradient(90deg, rgba(32, 0, 80, 1) 0%, rgba(78, 0, 47, 1) 100%);
+    --purpleGradient: linear-gradient(to right, #20004F 0%, #47002C 51%, #20004F 100%);
     --shadow: 0 0 30px rgba(228, 228, 228, .6);
+}
+
+p, small {
+    font-family: "opensans", 'sans-serif';
 }
 
 h1, h2, h3, .containerTitle span {
     font-family: "loraB", 'sans-serif';
 }
 
+a {
+    text-decoration: none;
+    font-family: "opensansB", sans-serif;
+    color: #53595F;
+}
+
+b {
+    font-family: "opensansB", sans-serif;
+}
+
 p {
     line-height: 1.6;
+    max-width: 500px;
+    font-size: 1rem;
+}
+
+.notVisible {
+    display: none;
+}
+
+.hidden {
+    position: absolute;
+    text-indent: -9999px;
 }
 
 .current_page_item a {
     color: black;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #20004F;
+}
+
+.menu a:hover {
+    color: black;
+    border-bottom: 2px solid #20004F;
+    padding: 0 5px;
+}
+.menu a {
+    padding: 0 5px;
+    transition: .1s;
 }
 
 .containerHome {
-    box-shadow: var(--shadow);
-    padding: 2rem 1rem;
+    padding: 3rem 2rem 2rem;
 }
 
-.btnTickets {
+li .btnTickets:hover {
+    border: none;
+    padding: 10px 0;
+    color: white;
+    transform: translateY(-5px);
+}
+ul .btnTickets {
     background: var(--purpleGradient);
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 0;
+    border-radius: 3px;
     width: 100%;
     display: block;
+    border: none;
 }
 
 .btnCta {
-    background: var(--purpleGradient);
+    background-image: var(--purpleGradient);
     color: white;
     display: block;
     padding: 20px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    max-width: 400px;
     position: relative;
     font-weight: bold;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+.btnCta:hover {
+    background-position: right center; /* change the direction of the change here */
 }
 
 .btnCta:after {
@@ -161,22 +218,41 @@ p {
     max-width: 120px;
     margin: 0 auto;
 }
-.logoFcb{
-    max-width: 40px;
+.containerBecomeExposant{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
 }
-.actualityFooter{
+.btnExposant{
+    margin: auto;
+}
+
+.containerBecomeVigneron{
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 5px;
+}
+.logoFcb {
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+.actualityFooter {
     display: flex;
     align-items: center;
 }
-.containerActualityFooter{
+
+.containerActualityFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
 }
-.containerPracticalInformation img{
+
+.containerPracticalInformation img {
     max-width: 40px;
 }
+
 .containerPracticalInformation section {
     display: flex;
     flex-direction: column;
@@ -194,7 +270,7 @@ footer {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 25px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .pictoPriceFooter, .pictoDateFooter, .pictoLocationFooter {
@@ -205,8 +281,66 @@ footer {
     margin: 0 auto;
 }
 
+.containerTitleSlide {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.containerTitleSlide h2 {
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.arrowsSlide {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.7em;
+    background: var(--purpleGradient);
+    padding: 30px 0;
+    max-width: 200px;
+}
+
+.arrowsSlide:after {
+    content: "";
+    display: block;
+    width: 3px;
+    position: absolute;
+    height: 35px;
+    background: white;
+    top: 12px;
+    opacity: .4;
+    border-radius: 10px;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 50%;
+    cursor: pointer;
+    background: url(../resources/svg/arrow.svg) no-repeat center;
+}
+
+.prev {
+    left: 0;
+    top: 1px;
+    transform: rotate(180deg);
+}
+
+.next {
+    right: 0;
+}
+
 .pictoPriceFooter {
     background: url(../resources/svg/price-tag.svg) no-repeat center;
+}
+
+.mySlides h3 {
+    font-size: 1.9rem;
 }
 
 .pictoDateFooter {
@@ -220,8 +354,9 @@ footer {
 .containerPresentationHome .logo {
     display: none;
 }
-.containerPresentationHome{
-    margin-top: 100px;
+
+.containerPresentationHome {
+    margin-top: 90px;
 }
 
 .containerTicketsHome {
@@ -236,15 +371,16 @@ footer {
     color: transparent;
     position: fixed;
     right: -5px;
-    width: 35px;
+    width: 21px;
     text-indent: -9999px;
     transition: .3s;
     font-weight: bold;
+    z-index: 1;
     letter-spacing: .6px;
 }
 
 .ctaTicketsHover {
-    width: 100px;
+    width: 83px;
     color: white;
     text-indent: 30px;
 }
@@ -292,19 +428,21 @@ img {
 }
 
 .containerTitle span {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .containerTitle {
     display: flex;
-    align-items: flex-end;
     margin-top: 20px;
+    justify-content: space-between;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .marketTitle {
     position: absolute;
-    right: 15px;
+    right: 0;
+    top: 20px;
 }
 
 .marketTitle span {
@@ -328,7 +466,6 @@ img {
 
 .navbar {
     width: 100%;
-    padding: 1.5rem 1rem;
     color: #252a32;
     background: #fff;
     position: fixed;
@@ -336,14 +473,29 @@ img {
     box-shadow: var(--shadow);
 }
 
-@media only screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-    }
+.containerAimHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 3% -50px;
+
+}
+
+.containerAimHome section {
+    margin-bottom: 100px;
+}
+
+.containerAimHome p {
+    margin-bottom: 40px;
+}
+
+.containerAimHome h3 {
+    font-size: 1.3rem;
+    margin: 40px 0 20px;
+}
+
+.menuOpenNavbar {
+    min-height: 100%;
 }
 
 .navbar .navbrand {
@@ -351,8 +503,13 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem;
 }
-
+.sectionContainerHome{
+    max-width: 1500px;
+    margin: auto;
+    box-shadow: var(--shadow);
+}
 .navbar .navbrand .burger {
     display: flex;
     flex-direction: row;
@@ -365,10 +522,36 @@ img {
     transition: all 0.35s ease;
 }
 
+.slider {
+    box-shadow: var(--shadow);
+    padding: 50px 1rem;
+}
+
+.textExposant {
+    margin: 30px 0;
+    font-size: 1rem;
+}
+
+small {
+    font-size: .8rem;
+    text-align: center;
+    display: block;
+}
+
+.regionExposant {
+    font-family: "loraI", sans-serif;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
 .menu li {
-    margin: 10px 0;
+    margin: 30px 0;
     text-align: center;
     font-size: 1.5em;
+}
+
+.menu li:nth-child(1) {
+    margin-top: 0;
 }
 
 .navbar .navbrand .burger-close {
@@ -379,18 +562,16 @@ ul .containerBtnTickets {
     margin-top: 40px;
 }
 
+ul .btnTicketsMenu {
+    margin: 50px 1rem;
+}
+
 .navbar .navbrand .burger.active .burger-open {
     display: none;
 }
 
 .navbar .navbrand .burger.active .burger-close {
     display: flex;
-}
-
-@media only screen and (min-width: 768px) {
-    .navbar .navbrand .burger {
-        display: none;
-    }
 }
 
 .navbar .menu {
@@ -425,7 +606,145 @@ ul .containerBtnTickets {
     margin: 1rem 0;
 }
 
-@media only screen and (min-width: 768px) {
+.navbar .social {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .social-item {
+    font-size: 1.3rem;
+    line-height: inherit;
+    margin: 0 0.5rem;
+    color: #252a32;
+    transition: all 0.35s ease;
+}
+
+.navbar .social-item:hover {
+    color: #148cb8;
+}
+
+.containerTextTitleAim h2 {
+    font-size: 1.3rem;
+    margin: 50px 0 20px;
+}
+
+.containerImageHome {
+    align-self: center;
+}
+
+.containerAllExposants {
+    margin-top: 70px;
+    width: 100%;
+}
+
+.textPracticalInformation {
+    text-align: center;
+    margin: auto;
+}
+
+.containerPracticalInformation {
+    font-size: 1.3rem;
+}
+.titleExposant{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 650px) {
+
+
+    .containerImagesHome {
+        max-width: 500px;
+    }
+
+    .containerTextTitleAim {
+        display: flex;
+
+    }
+
+    .containerCtaButton {
+        margin-left: auto;
+    }
+
+    .containerTextTitleAimSecond {
+        flex-direction: row-reverse;
+    }
+
+    .containerTextTitleAimSecond .btnCta {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .containerSlide {
+        display: flex;
+    }
+
+    .containerTextExposant, .containerTextHome {
+        margin-left: 5%;
+    }
+
+    .containerPracticalInformation {
+        display: flex;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+
+    .containerHome {
+        display: flex;
+    }
+
+    .containerPresentationHome {
+        margin-right: 50px;
+    }
+
+    .containerText {
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    .containerAllExposants a {
+        margin: 0 auto;
+    }
+
+    .containerAimHome section:nth-child(2) .containerText {
+        margin-left: 0;
+        margin-right: 5%;
+    }
+    .containerButtonExpo{
+        align-self: center;
+        min-width: 250px;
+    }
+    .containerBecomeExposant{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .navbar .navbrand .burger, .logo {
+        display: none;
+    }
+
+    .navbar .social {
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
     .navbar .menu {
         display: flex;
         flex-direction: row;
@@ -438,29 +757,66 @@ ul .containerBtnTickets {
         padding: 0;
         margin: 0 0.5rem;
     }
+
+    ul a {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        justify-content: center;
+        position: inherit;
+        box-shadow: none;
+    }
+
+    .menu li:nth-child(1) {
+        margin-top: 30px;
+    }
+
+    .menu li {
+        margin: 30px 20px;
+    }
+
+    .btnTickets {
+        min-width: 100px;
+        padding: 10px 0;
+    }
+
+    .containerPresentationHome .logoHome {
+        display: inline-block;
+        min-width: 100px;
+    }
+
+    .containerTextExposant, .containerTextHome {
+        margin-left: auto;
+    }
+
+    .slider, .containerHome {
+        padding: 50px 5%;
+    }
+
+    .containerAimHome {
+        margin: 4rem 10% -20px;
+    }
+
+    .ctaTickets {
+        display: none;
+    }
+
+    .containerPresentationHome {
+        margin-top: 50px;
+    }
+
+    .containerTextHome {
+        margin-top: 0;
+    }
+    .titleExposant{
+        margin-bottom: 100px;
+        margin-top: 20px;
+    }
 }
 
-.navbar .social {
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar .social-item {
-    font-size: 1.65rem;
-    line-height: inherit;
-    margin: 0 0.5rem;
-    color: #252a32;
-    transition: all 0.35s ease;
-}
-
-.navbar .social-item:hover {
-    color: #148cb8;
-}
-
-@media only screen and (min-width: 768px) {
-    .navbar .social {
-        display: flex;
+@media only screen and (min-width: 1100px) {
+    .containerTextHome, .containerTextExposant {
+        margin-left: auto;
     }
 }

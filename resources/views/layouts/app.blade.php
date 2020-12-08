@@ -6,10 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>
         {{ 'Gourmets' }}
-        {{ Request::is('*/users/*') || Request::is('*/users') || Request::is('*/dashboard') ? " | Étudiants" : "" }}
-        {{ Request::is('*/books/*') || Request::is('*/books') ? " | Livres" : "" }}
-        {{ Request::is('*/purchases/*') || Request::is('*/purchases') ? " | Achats" : "" }}
-        {{ Request::is('*/settings') ? " | Paramètres" : "" }}
+        {{ Request::is('/') ? " | Accueil" : "" }}
     </title>
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -17,9 +14,9 @@
 </head>
 <body>
 <h1 class="hidden">Le marché des gourmets</h1>
-<nav class="navbar">
+<nav class="navbar" id="navbar">
     <div class="navbrand">
-        <a href="/"><img class="logo" src="../resources/svg/Logo_club.png" alt=""></a>
+        <a href="/"><img class="logo" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets"></a>
         <div class="burger" id="burger">
 			<span class="burger-open">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
@@ -37,37 +34,37 @@
         </div>
     </div>
     <ul class="menu" id="menu">
-        <li {{ Request::is('*/home/*') || Request::is('*/home') || Request::is('*/dashboard') ? "current_page_item" : "" }}>
+        <li class="itemMenu {{ Request::is('/') ? "current_page_item" : "" }}">
             <a href="#">
                 Accueil
             </a>
         </li>
-        <li {{ Request::is('*/exposants/*') || Request::is('*/exposants') ? "current_page_item" : "" }}>
-            <a href="#">
+        <li class="itemMenu {{ Request::is('*/exposants/*') || Request::is('exposants') ? "current_page_item" : "" }}">
+            <a href="{{route('exposants.index')}}">
                 Exposants
             </a>
         </li>
-        <li {{ Request::is('*/archive/*') || Request::is('*/archive') ? "current_page_item" : "" }}>
+        <li class="itemMenu {{ Request::is('*/archive/*') || Request::is('*/archive') ? "current_page_item" : "" }}">
             <a href="#">
                 Photos
             </a>
         </li>
-        <li {{ Request::is('*/restaurant/*') || Request::is('*/restaurant') ? "current_page_item" : "" }}>
+        <li class="itemMenu {{ Request::is('*/restaurant/*') || Request::is('*/restaurant') ? "current_page_item" : "" }}">
             <a href="#">
                 Restaurant
             </a>
         </li>
-        <li {{ Request::is('*/about/*') || Request::is('*/about') ? "current_page_item" : "" }}>
+        <li class="itemMenu {{ Request::is('*/about/*') || Request::is('*/about') ? "current_page_item" : "" }}">
             <a href="#">
                 Qui sommes-nous ?
             </a>
         </li>
-        <li {{ Request::is('*/contact/*') || Request::is('*/contact') ? "current_page_item" : "" }}>
+        <li class="itemMenu {{ Request::is('*/contact/*') || Request::is('*/contact') ? "current_page_item" : "" }}">
             <a href="#">
                 Contact
             </a>
         </li>
-        <li class="containerBtnTickets">
+        <li class="containerBtnTickets btnTicketsMenu">
             <a href="#" class="btnTickets">
                 Billets
             </a>
@@ -77,7 +74,76 @@
 <main>
     @yield('content')
 </main>
-@yield('footer')
+<footer>
+    <section>
+        <h2 class="hidden">
+            Informations pratiques
+        </h2>
+        <div class="containerPracticalInformation">
+            <section>
+                <div>
+                    <div class="pictoDateFooter">
+                    </div>
+                    <h3 class="titleDateFooter">
+                        Quand ?
+                    </h3>
+                </div>
+                <div class="textPracticalInformation">
+                    <p>
+                        Le 24 mars 2021 de 16h à 22h
+                    </p>
+                    <p>
+                        Le 25 mars 2021 de 16h à 22h
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div class="pictoPriceFooter">
+                    </div>
+                    <h3 class="titlePriceFooter">
+                        Prix ?
+                    </h3>
+                </div>
+                <div class="textPracticalInformation">
+                    <p>
+                        Entrée simple : 6 €
+                    </p>
+                    <p>
+                        Entrée gratuite pour les moins de 16 ans.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div class="pictoLocationFooter">
+                    </div>
+                    <h3 class="titleLocationFooter">
+                        Où ?
+                    </h3>
+                </div>
+                <div class="textPracticalInformation">
+                    <p>
+                        À la salle des moines,
+                    </p>
+                    <p>
+                        Val-Saint-Lambert, 4540 Amay
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <a href="/">
+        <img class="logoFooter" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets">
+    </a>
+    <div>
+        <a href="#" class="containerActualityFooter">
+            <p class="actualityFooter">Suivez notre actualité sur :<img src="../resources/svg/facebook.svg"
+                                                                        class="logoFcb" alt="logo Facebook"></p>
+        </a>
+    </div>
+    <small>Placé sous le patronage de : Simonis Isabelle, Mottard Paul-Emile et Javaux Jean-Michel</small>
+</footer>
 <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

@@ -5,8 +5,8 @@
             <div class="containerTicketsHome" id="containerTicketsHome">
                 <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
             </div>
-            <div class="logo">
-                <img src="" alt="Logo des marchés des gourmets">
+            <div class="logo logoHome">
+                <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
             </div>
             <div class="containerTitleHome">
                 <div>
@@ -52,78 +52,176 @@
             <div>
                 <a href="#" class="btnCta">Devenir exposant</a>
             </div>
-            <!-- picto fleche -->
         </div>
     </section>
-@endsection
-@section('footer')
-    <footer>
+    <div class="containerAimHome">
         <section>
-            <h2 class="hidden">
-                Informations pratiques
-            </h2>
-            <div class="containerPracticalInformation">
-                <section>
-                    <!-- picto -->
-                    <div>
-                        <div class="pictoDateFooter">
-                        </div>
-                        <h3 class="titleDateFooter">
-                            Quand ?
-                        </h3>
-                    </div>
+            <div class="containerTextTitleAim">
+                <div class="containerImageHome">
+                    <img src="resources/img/sausage.jpg"
+                         srcset="resources/img/sausage_small.jpg 320w, resources/img/sausage.jpg 640w"
+                         sizes="100vw" alt="Image de saucissons">
+                </div>
+                <div class="containerText">
+                    <h2>
+                        Qu'est ce que l'on y retrouve ?
+                    </h2>
                     <p>
-                        Le 24 mars 2021 de 16h à 22h
+                        Le marché des gourmets vous propose <b>une large gamme de produits</b> comestible (charcuteries,
+                        vins,
+                        fromages
+                        …), une gamme que <b>vous ne trouverez pas ailleurs,</b> car nos commerçants viennent des quatre
+                        coins
+                        du
+                        monde.
                     </p>
-                    <p>
-                        Le 25 mars 2021 de 16h à 22h
-                    </p>
-                </section>
-                <section>
-                    <!-- picto -->
-                    <div>
-                        <div class="pictoPriceFooter">
-                        </div>
-                        <h3 class="titlePriceFooter">
-                            Prix ?
-                        </h3>
+                    <div class="containerCtaButton">
+                        <a href="#" class="btnCta">Acheter un billet</a>
                     </div>
-                    <p>
-                        Entrée simple : 6 €
-                    </p>
-                    <p>
-                        Entrée gratuite pour les moins de 16 ans.
-                    </p>
-                </section>
-                <section>
-                    <!-- picto -->
-                    <div>
-                        <div class="pictoLocationFooter">
-                        </div>
-                        <h3 class="titleLocationFooter">
-                            Où ?
-                        </h3>
-                    </div>
-                    <div>
-                        <p>
-                            À la salle des moines,
-                        </p>
-                        <p>
-                            Val-Saint-Lambert, 4540 Amay
-                        </p>
-                    </div>
-                </section>
+                </div>
             </div>
+
         </section>
-        <a href="/">
-            <img class="logoFooter" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets">
-        </a>
-        <div>
-            <a href="#" class="containerActualityFooter">
-                <p class="actualityFooter">Suivez notre actualité sur :<img src="../resources/svg/facebook.svg"
-                                                                            class="logoFcb" alt="logo Facebook"></p>
-            </a>
+        <section>
+            <div class="containerTextTitleAim containerTextTitleAimSecond">
+                <div class="containerImageHome">
+                    <img src="resources/img/market.jpg"
+                         srcset="resources/img/market_small.jpg 320w, resources/img/market.jpg 640w"
+                         sizes="100vw" alt="Image récente du salon du marché des gourmets">
+                </div>
+                <div class="containerText">
+                    <h2>
+                        Les années passées
+                    </h2>
+                    <p>
+                        Le marché des gourmets existe depuis plus de 20 ans. Dans le but de vous faire plaisir, <b>une
+                            trentaine
+                            d’exposants</b> y présenteront divers produits, mais également pour y passer un <b>délicieux
+                            moment de
+                            dégustations</b> et de rencontres et ce dans la bonne humeur bien sûr !
+                    </p>
+                    <div class="containerCtaButton">
+                        <a href="#" class="btnCta">Acheter un billet</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="containerTextTitleAim">
+                <div class="containerImageHome">
+                    <img src="resources/img/restaurant.jpg"
+                         srcset="resources/img/restaurant_small.jpg 320w, resources/img/restaurant.jpg 640w"
+                         sizes="100vw" alt="Image d'un sandwiche">
+                </div>
+                <div class="containerText">
+                    <h2>
+                        Notre restaurant
+                    </h2>
+                    <p>Le marché des gourmets vous propose une carte digne de ce nom. <b>Prix généralement faible et
+                            varié</b>
+                        dans le
+                        goût, nous mettons tout en oeuvre pour que votre visite se passe pour le mieux.
+                    </p>
+                    <div class="containerCtaButton">
+                        <a href="#" class="btnCta">Notre restaurant</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    <section class="slider">
+        <div class="containerTitleSlide">
+            <h2>
+                Nos 3 derniers exposants
+            </h2>
+            <div class="arrowsSlide">
+                <a class="prev" id="prev"></a>
+                <a class="next" id="next"></a>
+            </div>
         </div>
-        <small>Placé sous le patronage de : Simonis Isabelle, Mottard Paul-Emile et Javaux Jean-Michel</small>
-    </footer>
+        <div class="slideshow-container">
+
+            <section class="mySlides fade">
+                <div class="containerSlide">
+                    <div>
+                        <h3>
+                            Vins nobles de la sicile
+                        </h3>
+                        <p class="regionExposant">
+                            Sicile
+                        </p>
+                        <div class="containerImagesHome">
+                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                 sizes="100vw" alt="Image d'un exposant">
+                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                 sizes="100vw" alt="Image d'un exposant">
+                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                 sizes="100vw" alt="Image d'un exposant">
+                        </div>
+                    </div>
+                    <div class="containerTextExposant">
+                        <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
+                            classiques
+                            qui
+                            expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
+                            volcan
+                            actif d'Europe. Son caractère à la fois raffiné, austère et puissant lui donne un goût
+                            original
+                            et
+                            unique!</p>
+                        <div>
+                            <a href="#" class="btnCta">Vins nobles de la sicile</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mySlides fade">
+                <div class="containerSlide">
+                    <div>
+                        <h3>
+                            Aveve
+                        </h3>
+                        <p class="regionExposant">
+                            Belgique
+                        </p>
+                        <div class="containerImagesHome">
+                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                 sizes="100vw" alt="Image d'un exposant">
+                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                 sizes="100vw" alt="Image d'un exposant">
+                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                 sizes="100vw" alt="Image d'un exposant">
+                        </div>
+                    </div>
+                    <div class="containerTextExposant">
+                        <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
+                            classiques
+                            qui
+                            expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
+                            volcan
+                            actif d'Europe. Son caractère à la fois raffiné, austère et puissant lui donne un goût
+                            original
+                            et
+                            unique!</p>
+                        <div>
+                            <a href="#" class="btnCta">Vins nobles de la sicile</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="containerAllExposants">
+                <a href="#" class="btnCta">Tous les exposants</a>
+            </div>
+        </div>
+    </section>
 @endsection

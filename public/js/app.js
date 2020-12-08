@@ -6,7 +6,8 @@ burgerMenu.addEventListener("click", (e) => {
     e.preventDefault()
     navbarMenu.classList.toggle("active");
     burgerMenu.classList.toggle("active");
-    containerTicketsHome.classList.toggle("hidden")
+    containerTicketsHome.classList.toggle("notVisible")
+    document.getElementById("navbar").classList.toggle("menuOpenNavbar")
 });
 ctaTickets.addEventListener("mouseover", (e) => {
     e.target.classList.add("ctaTicketsHover")
@@ -14,3 +15,29 @@ ctaTickets.addEventListener("mouseover", (e) => {
 ctaTickets.addEventListener("mouseleave", (e) => {
     e.target.classList.remove("ctaTicketsHover")
 })
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+document.getElementById("next").addEventListener("click",()=>{
+    showSlides(slideIndex += 1);
+})
+document.getElementById("prev").addEventListener("click",()=>{
+    showSlides(slideIndex -= 1);
+})
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
