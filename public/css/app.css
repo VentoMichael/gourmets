@@ -183,6 +183,7 @@ ul .btnTickets {
     max-width: 400px;
     position: relative;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.5s;
     background-size: 200% auto;
     border: 0;
@@ -197,26 +198,30 @@ ul .btnTickets {
 .containerFormulary li {
     font-family: 'opensansB', sans-serif;
     line-height: 25px;
+    margin: 20px 0;
     padding: 10px 0 10px 50px;
     word-break: break-word;
     color: black;
 }
+
 .containerFormulary a {
     color: black;
-    font-family: 'opensansB',sans-serif;
+    font-family: 'opensansB', sans-serif;
 }
-.containerFormulary input,.containerFormulary textarea {
+
+.containerFormulary input, .containerFormulary textarea,.formContact select {
     padding: 10px;
     border: none;
     box-shadow: var(--shadow);
-    font-family: 'opensansB',sans-serif;
+    font-family: 'opensansB', sans-serif;
     font-size: 1rem;
 }
-.containerFormulary ul{
+
+.containerFormulary ul {
     margin: 30px 0;
 }
 
-.formContact:before{
+.formContact:before {
     content: "";
     position: absolute;
     display: block;
@@ -229,10 +234,12 @@ ul .btnTickets {
     left: 0;
     right: 0;
 }
+
 .formContact input::placeholder, .formContact textarea::placeholder {
     color: black;
     opacity: .4;
 }
+
 @keyframes downarrow {
     0% {
         transform: translate(0, 0);
@@ -270,13 +277,20 @@ ul .btnTickets {
 .infoContactPlace,
 .infoContactMail,
 .infoContactWebsite,
-.infoContactPhone,.formContact {
+.infoContactPhone,
+.formContact,
+.infoBuyTicket,
+.infoBuyPrice {
     position: relative;
 }
-.formContact{
+
+.formContact {
     margin-top: 50px;
     padding-top: 50px;
 }
+
+.infoBuyTicket::before,
+.infoBuyPrice::before,
 .infoContactDate::before,
 .infoContactPlace::before,
 .infoContactMail::before,
@@ -292,11 +306,25 @@ ul .btnTickets {
     background: url("../resources/svg/phone.svg") no-repeat center;
     background-size: 100%;
 }
-
+.infoBuyTicket::before{
+        background: url("../resources/svg/tickets.svg") no-repeat center;
+}
+.infoBuyPrice::before{
+        background: url("../resources/svg/euro.svg") no-repeat center;
+}
 .infoContactDate::before {
     background-image: url("../resources/svg/calendar.svg");
 }
-
+.itemTotalPrice{
+    font-family: 'opensansB',sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+div .containerShoppingCart{
+    padding: 0 0 30px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
 .infoContactPlace::before {
     background-image: url("../resources/svg/placeholder.svg");
 }
@@ -563,8 +591,8 @@ img {
 }
 
 .containerTextHome {
-    margin: 40px 0;
-    margin-bottom: 10px;
+    margin: 40px 0 10px;
+    align-self: center;
 }
 
 .containerTextHome p {
@@ -644,15 +672,17 @@ img {
     flex-direction: column;
     margin-bottom: 40px;
 }
-.containerInput label{
+
+.containerInput label {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-family: "opensansB", 'sans-serif';
 }
+
 .titleForm {
     border-bottom: 1px solid #F0F0F0;
     padding-bottom: 20px;
-    font-family: "loraB",sans-serif;
+    font-family: "loraB", sans-serif;
     font-size: 1.5rem;
     max-width: inherit;
 }
@@ -660,6 +690,7 @@ img {
 .containerFormulary {
     padding: 3rem 2rem;
     box-shadow: var(--shadow);
+    position: relative;
 }
 
 .sectionContainerSlide {
@@ -898,7 +929,10 @@ select, .search {
     box-shadow: var(--shadow);
     padding: 1rem;
 }
-
+.formContact select{
+    background: url(../resources/svg/arrowDownBlack.svg) no-repeat 98% 50%;
+    color: black;
+}
 .containerExposant {
     display: flex;
     flex-direction: column;
@@ -1297,26 +1331,34 @@ option {
     .loupeItem {
         margin: 10px;
     }
-    .informationsContact{
+
+    .informationsContact {
         width: 30%;
-        align-self: center;
+        position: sticky;
+        height: fit-content;
+        top: 50px;
     }
-    .formContactContainer{
+
+    .formContactContainer {
         width: 60%;
         margin-left: 10%;
     }
-    .containerFormulary{
+
+    .containerFormulary {
         display: flex;
         max-width: 1300px;
         margin: 50px auto auto;
     }
-    .formContact{
+
+    .formContact {
         padding-top: 0;
         margin-top: 0;
     }
-    .formContact:before{
+
+    .formContact:before {
         display: none;
     }
+
 }
 
 @media only screen and (min-width: 950px) {
