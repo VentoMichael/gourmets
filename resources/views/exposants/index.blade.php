@@ -30,15 +30,15 @@
             </div>
             <div class="containerTextHome">
                 <p>
-                    Au marché des gourmets d’Amay, nous avons sélectionné pour vous <b>plus de 30 exposants !</b> Ces
+                    Au marché des gourmets d’Amay, nous receuillons <b>plus de 30 exposants !</b> Ces
                     personnes passionnées donnent tous les jours <b>le meilleurs d’eux-mêmes</b> pour vous proposer <b>des
                         produits sains et de qualité.</b>
                 </p>
                 <p>
-                    Alors, n’hésitez pas à devenir exposant à Amay lors de cette 21e édition.
+                    Alors, n’hésitez pas à nous rendre visite à Amay lors de cette 21<sup>e</sup> édition.
                 </p>
                 <div>
-                    <a href="#" class="btnCta">Devenir exposant</a>
+                    <a href="#" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,112 @@
             </p>
         </div>
         <div class="containerButtonExpo">
-            <a href="#" class="btnCta btnExposant">Devenir exposant</a>
+            <a href="#" class="btnCta btnExposant">Devenir exposant <span class="arrowCta"></span></a>
         </div>
     </div>
+    <section>
+        <h2 class="hidden">
+            Les différents Exposants
+        </h2>
+        <div class="containerFiltersAll">
+            <div class="containerFilters">
+                <span class="countriesFilter">
+                    <label for="country">Pays</label>
+                    <select name="country" id="country">
+                        <option value="" disabled selected>Pays</option>
+                        <option value="italy">
+                            Italie
+                        </option>
+                        <option value="sicily">
+                            Sicile
+                        </option>
+                    </select>
+                </span>
+                <span class="productsFilter">
+                    <label for="product">Produits</label>
+                    <select name="product" id="product">
+                        <option value="" disabled selected>Produits</option>
+                        <option value="cheese">Fromages</option>
+                        <option value="wine">Vins</option>
+                    </select>
+                </span>
+                <span class="pageFilter">
+                    <label for="filterPage">Nombre d'item</label>
+                    <select name="filterPage" id="filterPage">
+                        <option value="4" selected>4</option>
+                        <option value="12">12</option>
+                        <option value="20">20</option>
+                    </select>
+                </span>
+                <span class="searchFilter" id="searchFilter">
+                    <label id="expoSearchLabel" for="expo-search">Chercher un exposant</label>
+                    <input class="search" type="search" id="expo-search" name="exposant" placeholder="Rob Harry ...">
+                </span>
+            </div>
+        </div>
+        <div class="containerExposants">
+            <section class="containerExposant">
+                <div>
+                    <img src="resources/svg/bottle.svg" alt="Picto of wine bottle">
+                    <h3>
+                        Vins nobles de la Sicile
+                    </h3>
+                    <p class="textRegionExposant">Sicile</p>
+                    <p>
+                        Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins classiques qui expriment
+                        pleinement
+                        son extraordinaire terroir, à savoir celui de l'Etna, le plus grand volcan actif d'Europe. Son
+                        caractère à la fois raffiné, austère et puissant lui donne un goût original et unique!
+                    </p>
+                    <div class="tagsContainer">
+                        <div class="moduleTag">
+                            Vins
+                        </div>
+                        <div class="moduleTag">
+                            Sicile
+                        </div>
+                        <div class="moduleTag">
+                            Multifruits
+                        </div>
+                        <div class="moduleTag">
+                            Bio
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
+                </div>
+            </section>
+            <section class="containerExposant">
+                <img src="resources/svg/cheese.svg" alt="Picto of cheese">
+                <h3>
+                    Rob Market
+                </h3>
+                <p class="textRegionExposant">France</p>
+                <p>
+                    Patrice et Philippe Marchand ne sont pas frères par hasard tant leur passion commune pour les
+                    fromages d’exception est intense. Un lien d’autant plus fort qu’ils partagent des secrets de famille
+                    pour fabriquer de vraies merveilles ! Rob vous propose près de 30 fromages créés et affinés par les
+                    frères Marchand.
+                </p>
+                <div class="tagsContainer">
+                    <div class="moduleTag">
+                        Vins
+                    </div>
+                    <div class="moduleTag">
+                        Sicile
+                    </div>
+                    <div class="moduleTag">
+                        Multifruits
+                    </div>
+                    <div class="moduleTag">
+                        Bio
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
+                </div>
+            </section>
+        </div>
+    </section>
 @endsection

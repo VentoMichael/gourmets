@@ -1,56 +1,61 @@
 @extends('layouts.app')
 @section('content')
-    <section class="containerHome">
-        <div class="containerPresentationHome">
-            <div class="containerTicketsHome" id="containerTicketsHome">
-                <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
-            </div>
-            <div class="logo logoHome">
-                <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
-            </div>
-            <div class="containerTitleHome">
-                <div>
-                    <h2>
-                        Le marché des gourmets
-                    </h2>
+    <section class="sectionContainerHome">
+        <div class="containerHome">
+
+            <div class="containerPresentationHome">
+                <div class="containerTicketsHome" id="containerTicketsHome">
+                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="containerTitle">
-                    <p class="textTitle">
+                <div class="logo logoHome">
+                    <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
+                </div>
+                <div class="containerTitleHome">
+                    <div>
+                        <h2>
+                            Le marché des gourmets
+                        </h2>
+                    </div>
+                    <div class="containerTitle">
+                        <p class="textTitle">
                         <span>
                             produits des terroirs européens
                         </span>
-                    </p>
-                    <p class="marketTitle">
+                        </p>
+                        <p class="marketTitle">
                         <span>
                             21<sup>e</sup> marché
                         </span>
-                    </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="containerImagesHome">
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                         srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                         sizes="100vw" alt="Image du salon du marché des gourmets">
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                         srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                         sizes="100vw" alt="Image du salon du marché des gourmets">
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                         srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                         sizes="100vw" alt="Image du salon du marché des gourmets">
                 </div>
             </div>
-            <div class="containerImagesHome">
-                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                     sizes="100vw" alt="Image du salon du marché des gourmets">
-                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                     sizes="100vw" alt="Image du salon du marché des gourmets">
-                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                     sizes="100vw" alt="Image du salon du marché des gourmets">
-            </div>
-        </div>
-        <div class="containerTextHome">
-            <p>
-                Le Marché des Gourmets est <b>un événement annuel</b> organisé par le Rotary Club de Flémalle sur le
-                prestigieux site <b>de Val-Saint-Lambert à la salle des moines</b> afin d'obtenir des fonds pour aider
-                <b>les plus démunis.</b>
-            </p>
-            <p>
-                Depuis lors, la fréquentation n'a cessé d'augmenter pour <b>atteindre 4000 visiteurs</b> et plusieurs
-                pays et régions se sont succédé comme notamment : l'Irlande, le Portugal, l'Italie et tant d’autres.
-            </p>
-            <div>
-                <a href="#" class="btnCta">Devenir exposant</a>
+            <div class="containerTextHome">
+                <p>
+                    Le Marché des Gourmets est <b>un événement annuel</b> organisé par le Rotary Club de Flémalle sur le
+                    prestigieux site <b>de Val-Saint-Lambert à la salle des moines</b> afin d'obtenir des fonds pour
+                    aider
+                    <b>les plus démunis.</b>
+                </p>
+                <p>
+                    Depuis lors, la fréquentation n'a cessé d'augmenter pour <b>atteindre 4000 visiteurs</b> et
+                    plusieurs
+                    pays et régions se sont succédé comme notamment : l'Irlande, le Portugal, l'Italie et tant d’autres.
+                </p>
+                <div>
+                    <a href="#" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
+                </div>
             </div>
         </div>
     </section>
@@ -76,7 +81,7 @@
                         monde.
                     </p>
                     <div class="containerCtaButton">
-                        <a href="#" class="btnCta">Acheter un billet</a>
+                        <a href="#" class="btnCta btnCtaResto">Acheter un billet <span class="arrowCta"></span></a>
                     </div>
                 </div>
             </div>
@@ -101,7 +106,7 @@
                             dégustations</b> et de rencontres et ce dans la bonne humeur bien sûr !
                     </p>
                     <div class="containerCtaButton">
-                        <a href="#" class="btnCta">Acheter un billet</a>
+                        <a href="#" class="btnCta">Acheter un billet <span class="arrowCta"></span></a>
                     </div>
                 </div>
 
@@ -125,7 +130,7 @@
                         goût, nous mettons tout en oeuvre pour que votre visite se passe pour le mieux.
                     </p>
                     <div class="containerCtaButton">
-                        <a href="#" class="btnCta">Notre restaurant</a>
+                        <a href="#" class="btnCta btnCtaResto">Notre restaurant <span class="arrowCta"></span></a>
                     </div>
                 </div>
 
@@ -133,94 +138,96 @@
 
         </section>
     </div>
-    <section class="slider">
-        <div class="containerTitleSlide">
-            <h2>
-                Nos 3 derniers exposants
-            </h2>
-            <div class="arrowsSlide">
-                <a class="prev" id="prev"></a>
-                <a class="next" id="next"></a>
+    <section class="sectionContainerSlide">
+        <div class="slider">
+            <div class="containerTitleSlide">
+                <h2>
+                    Nos 3 derniers exposants
+                </h2>
+                <div class="arrowsSlide">
+                    <a class="prev" id="prev"></a>
+                    <a class="next" id="next"></a>
+                </div>
             </div>
-        </div>
-        <div class="slideshow-container">
+            <div class="slideshow-container">
 
-            <section class="mySlides fade">
-                <div class="containerSlide">
-                    <div>
-                        <h3>
-                            Vins nobles de la sicile
-                        </h3>
-                        <p class="regionExposant">
-                            Sicile
-                        </p>
-                        <div class="containerImagesHome">
-                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                                 sizes="100vw" alt="Image d'un exposant">
-                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                                 sizes="100vw" alt="Image d'un exposant">
-                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                                 sizes="100vw" alt="Image d'un exposant">
-                        </div>
-                    </div>
-                    <div class="containerTextExposant">
-                        <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
-                            classiques
-                            qui
-                            expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
-                            volcan
-                            actif d'Europe. Son caractère à la fois raffiné, austère et puissant lui donne un goût
-                            original
-                            et
-                            unique!</p>
+                <section class="mySlides fade">
+                    <div class="containerSlide">
                         <div>
-                            <a href="#" class="btnCta">Vins nobles de la sicile</a>
+                            <h3>
+                                Vins nobles de la sicile
+                            </h3>
+                            <p class="regionExposant">
+                                Sicile
+                            </p>
+                            <div class="containerImagesHome">
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                     sizes="100vw" alt="Image d'un exposant">
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                     sizes="100vw" alt="Image d'un exposant">
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                     sizes="100vw" alt="Image d'un exposant">
+                            </div>
+                        </div>
+                        <div class="containerTextExposant">
+                            <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
+                                classiques
+                                qui
+                                expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
+                                volcan
+                                actif d'Europe. Son caractère à la fois raffiné, austère et puissant lui donne un goût
+                                original
+                                et
+                                unique!</p>
+                            <div>
+                                <a href="#" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="mySlides fade">
-                <div class="containerSlide">
-                    <div>
-                        <h3>
-                            Aveve
-                        </h3>
-                        <p class="regionExposant">
-                            Belgique
-                        </p>
-                        <div class="containerImagesHome">
-                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                                 sizes="100vw" alt="Image d'un exposant">
-                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                                 sizes="100vw" alt="Image d'un exposant">
-                            <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
-                                 srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
-                                 sizes="100vw" alt="Image d'un exposant">
-                        </div>
-                    </div>
-                    <div class="containerTextExposant">
-                        <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
-                            classiques
-                            qui
-                            expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
-                            volcan
-                            actif d'Europe. Son caractère à la fois raffiné, austère et puissant lui donne un goût
-                            original
-                            et
-                            unique!</p>
+                </section>
+                <section class="mySlides fade">
+                    <div class="containerSlide">
                         <div>
-                            <a href="#" class="btnCta">Vins nobles de la sicile</a>
+                            <h3>
+                                Aveve
+                            </h3>
+                            <p class="regionExposant">
+                                Belgique
+                            </p>
+                            <div class="containerImagesHome">
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                     sizes="100vw" alt="Image d'un exposant">
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                     sizes="100vw" alt="Image d'un exposant">
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                     srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
+                                     sizes="100vw" alt="Image d'un exposant">
+                            </div>
+                        </div>
+                        <div class="containerTextExposant">
+                            <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
+                                classiques
+                                qui
+                                expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
+                                volcan
+                                actif d'Europe. Son caractère à la fois raffiné, austère et puissant lui donne un goût
+                                original
+                                et
+                                unique!</p>
+                            <div>
+                                <a href="#" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
+                            </div>
                         </div>
                     </div>
+                </section>
+                <div class="containerAllExposants">
+                    <a href="#" class="btnCta">Tous les exposants <span class="arrowCta"></span></a>
                 </div>
-            </section>
-            <div class="containerAllExposants">
-                <a href="#" class="btnCta">Tous les exposants</a>
             </div>
         </div>
     </section>

@@ -35,7 +35,7 @@
     </div>
     <ul class="menu" id="menu">
         <li class="itemMenu {{ Request::is('/') ? "current_page_item" : "" }}">
-            <a href="#">
+            <a href="{{route('dashboard.index')}}">
                 Accueil
             </a>
         </li>
@@ -44,13 +44,13 @@
                 Exposants
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/archive/*') || Request::is('*/archive') ? "current_page_item" : "" }}">
-            <a href="#">
+        <li class="itemMenu {{ Request::is('*/gallery/*') || Request::is('gallery') ? "current_page_item" : "" }}">
+            <a href="{{route('gallery.index')}}">
                 Photos
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/restaurant/*') || Request::is('*/restaurant') ? "current_page_item" : "" }}">
-            <a href="#">
+        <li class="itemMenu {{ Request::is('*/restaurant/*') || Request::is('restaurant') ? "current_page_item" : "" }}">
+            <a href="{{route('restaurant.index')}}">
                 Restaurant
             </a>
         </li>
@@ -137,10 +137,11 @@
         <img class="logoFooter" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets">
     </a>
     <div>
-        <a href="#" class="containerActualityFooter">
-            <p class="actualityFooter">Suivez notre actualité sur :<img src="../resources/svg/facebook.svg"
-                                                                        class="logoFcb" alt="logo Facebook"></p>
-        </a>
+
+        <p class="actualityFooter"><a href="#" class="containerActualityFooter">Suivez notre actualité sur :<img
+                    src="../resources/svg/facebook.svg"
+                    class="logoFcb" alt="logo Facebook"></a></p>
+
     </div>
     <small>Placé sous le patronage de : Simonis Isabelle, Mottard Paul-Emile et Javaux Jean-Michel</small>
 </footer>
