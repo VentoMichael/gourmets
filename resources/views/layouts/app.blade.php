@@ -7,6 +7,12 @@
     <title>
         {{ 'Gourmets' }}
         {{ Request::is('/') ? " | Accueil" : "" }}
+        {{ Request::is('exposants/*') || Request::is('exposants') ? ' | Exposants' : ""}}
+        {{ Request::is('gallery') ? ' | Album photos' : ""}}
+        {{ Request::is('restaurant') ? ' | Restaurant' : ""}}
+        {{ Request::is('about') ? ' | À propos de nous' : ""}}
+        {{ Request::is('contact') ? ' | Contact' : ""}}
+        {{ Request::is('tickets') ? ' | Billets' : ""}}
     </title>
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -39,27 +45,27 @@
                 Accueil
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/exposants/*') || Request::is('exposants') ? "current_page_item" : "" }}">
+        <li class="itemMenu {{ Request::is('exposants/*') || Request::is('exposants') ? "current_page_item" : "" }}">
             <a href="{{route('exposants.index')}}">
                 Exposants
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/gallery/*') || Request::is('gallery') ? "current_page_item" : "" }}">
+        <li class="itemMenu {{ Request::is('gallery') ? "current_page_item" : "" }}">
             <a href="{{route('gallery.index')}}">
                 Photos
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/restaurant/*') || Request::is('restaurant') ? "current_page_item" : "" }}">
+        <li class="itemMenu {{ Request::is('restaurant') ? "current_page_item" : "" }}">
             <a href="{{route('restaurant.index')}}">
                 Restaurant
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/about/*') || Request::is('about') ? "current_page_item" : "" }}">
+        <li class="itemMenu {{ Request::is('about') ? "current_page_item" : "" }}">
             <a href="{{route('about.index')}}">
                 Qui sommes-nous ?
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/contact/*') || Request::is('contact') ? "current_page_item" : "" }}">
+        <li class="itemMenu {{ Request::is('contact') ? "current_page_item" : "" }}">
             <a href="{{route('contact.index')}}">
                 Contact
             </a>

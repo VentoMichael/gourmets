@@ -161,6 +161,7 @@ li .btnTickets:hover {
     padding: 10px 0;
     color: white;
     transform: translateY(-5px);
+    box-shadow: 0 10px 13px -7px #1E0000, 5px 5px 15px 5px rgba(210, 210, 210, 0);
 }
 
 ul .btnTickets {
@@ -171,6 +172,9 @@ ul .btnTickets {
     width: 100%;
     display: block;
     border: none;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px 0;
 }
 
 .btnCta {
@@ -619,7 +623,6 @@ img {
     flex-direction: column;
     align-items: center;
     margin: 4rem 2rem -50px;
-
 }
 
 .containerAimHome section {
@@ -673,12 +676,26 @@ img {
     margin-bottom: 40px;
 }
 
-.containerInput label {
+.containerInput label,.containerButtonsRadio p {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-family: "opensansB", 'sans-serif';
 }
-
+.containerButtonsRadio label{
+    font-size: 1rem;
+    font-family: "opensansB", 'sans-serif';
+    color: #595959;
+}
+.containerButtonRadio{
+    display: flex;
+    flex-direction: column;
+}
+.buttonRadio{
+    margin: 5px 0;
+}
+.containerButtonsRadio{
+    margin-bottom: 40px;
+}
 .titleForm {
     border-bottom: 1px solid #F0F0F0;
     padding-bottom: 20px;
@@ -865,7 +882,9 @@ ul .btnTicketsMenu {
     color: transparent;
     position: absolute;
 }
-
+.btnTicketsMenu a {
+    transition: .3s;
+}
 select, .search {
     background: transparent;
     width: 100%;
@@ -882,7 +901,9 @@ select, .search {
     border-radius: 3px;
     margin-left: 0;
 }
-
+select > option{
+    background:white;
+}
 .search {
     background: none;
     height: 52px;
@@ -1068,7 +1089,9 @@ option {
     display: inline-block;
     margin: 40px 0 30px;
 }
-
+.priceBecomeExpo{
+    font-family: "opensansB",sans-serif;
+}
 .containerSandwichs {
     position: relative;
     padding: 3rem 0;
@@ -1146,7 +1169,19 @@ option {
 .containerAboutUsHowSection img {
     max-width: 100px;
 }
-
+.formBecomeContainer form:before{
+    display: none;
+}
+.formBecomeContainer form:before{
+    display: none;
+}
+.defaultSelectOption{
+    color: red;
+}
+.formBecomeExpo{
+    margin-top: 0;
+    padding-top: 0;
+}
 @media only screen and (min-width: 650px) {
     .containerImagesHome {
         max-width: 500px;
@@ -1365,7 +1400,9 @@ option {
     .navbar .navbrand .burger, .logo {
         display: none;
     }
-
+    ul .btnTickets {
+        padding: 10px 0;
+    }
     .navbar .social {
         display: flex;
     }
