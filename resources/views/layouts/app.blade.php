@@ -54,13 +54,13 @@
                 Restaurant
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/about/*') || Request::is('*/about') ? "current_page_item" : "" }}">
-            <a href="#">
+        <li class="itemMenu {{ Request::is('*/about/*') || Request::is('about') ? "current_page_item" : "" }}">
+            <a href="{{route('about.index')}}">
                 Qui sommes-nous ?
             </a>
         </li>
-        <li class="itemMenu {{ Request::is('*/contact/*') || Request::is('*/contact') ? "current_page_item" : "" }}">
-            <a href="#">
+        <li class="itemMenu {{ Request::is('*/contact/*') || Request::is('contact') ? "current_page_item" : "" }}">
+            <a href="{{route('contact.index')}}">
                 Contact
             </a>
         </li>
