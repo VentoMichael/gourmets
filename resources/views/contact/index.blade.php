@@ -6,12 +6,12 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Une question ou une envie spéciale ?
                         </h2>
                     </div>
@@ -42,20 +42,20 @@
         </div>
     </section>
     <section class="containerFormulary">
-        <h2 class="hidden">
+        <h2 aria-level="2" class="hidden">
             Formulaire de contact
         </h2>
         <div class="informationsContact">
             <p class="titleForm">
                 Le marché des gourmets
             </p>
-            <ul>
-                <li class="infoContactDate">24, 25 mars 2021</li>
-                <li class="infoContactPlace">À la salle des moines, Val-Saint-Lambert, 4450 Amay</li>
-                <li class="infoContactMail"><a href="mailto:marchedesgourmets@gmail.com">marchedesgourmets@gmail.com</a>
+            <ul role="list">
+                <li role="listitem" class="infoContactDate">24, 25 mars 2021</li>
+                <li role="listitem" class="infoContactPlace">À la salle des moines, Val-Saint-Lambert, 4450 Amay</li>
+                <li role="listitem" class="infoContactMail"><a href="mailto:marchedesgourmets@gmail.com">marchedesgourmets@gmail.com</a>
                 </li>
-                <li class="infoContactWebsite"><a href="www.marchedesgourmets.be">www.marchedesgourmets.be</a></li>
-                <li class="infoContactPhone"><a href="tel:+32494827265">0494 827 265</a></li>
+                <li role="listitem" class="infoContactWebsite"><a href="www.marchedesgourmets.be">www.marchedesgourmets.be</a></li>
+                <li role="listitem" class="infoContactPhone"><a href="tel:+32494827265">0494 827 265</a></li>
             </ul>
         </div>
         <div class="formContactContainer">

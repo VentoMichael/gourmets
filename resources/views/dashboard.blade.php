@@ -7,12 +7,12 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2>
+                        <h2 aria-level="2">
                             Le marché des gourmets
                         </h2>
                     </div>
@@ -68,7 +68,7 @@
                          sizes="100vw" alt="Image de saucissons">
                 </div>
                 <div class="containerText">
-                    <h2>
+                    <h2 aria-level="2">
                         Qu'est ce que l'on y retrouve ?
                     </h2>
                     <p>
@@ -95,7 +95,7 @@
                          sizes="100vw" alt="Image récente du salon du marché des gourmets">
                 </div>
                 <div class="containerText">
-                    <h2>
+                    <h2 aria-level="2">
                         Les années passées
                     </h2>
                     <p>
@@ -121,7 +121,7 @@
                          sizes="100vw" alt="Image d'un sandwiche">
                 </div>
                 <div class="containerText">
-                    <h2>
+                    <h2 aria-level="2">
                         Notre restaurant
                     </h2>
                     <p>Le marché des gourmets vous propose une carte digne de ce nom. <b>Prix généralement faible et
@@ -141,7 +141,7 @@
     <section class="sectionContainerSlide">
         <div class="slider">
             <div class="containerTitleSlide">
-                <h2>
+                <h2 aria-level="2">
                     Nos 3 derniers exposants
                 </h2>
                 <div class="arrowsSlide">
@@ -154,7 +154,7 @@
                 <section class="mySlides fade">
                     <div class="containerSlide">
                         <div>
-                            <h3>
+                            <h3 aria-level="3">
                                 Vins nobles de la sicile
                             </h3>
                             <p class="regionExposant">
@@ -191,7 +191,7 @@
                 <section class="mySlides fade">
                     <div class="containerSlide">
                         <div>
-                            <h3>
+                            <h3 aria-level="3">
                                 Aveve
                             </h3>
                             <p class="regionExposant">

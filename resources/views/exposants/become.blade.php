@@ -6,17 +6,17 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Des bénévoles dans le but d'aider
                         </h2>
                     </div>
                 </div>
-                <div class="containerImagesHome">
+                <div class="containerImagesHome" role="img">
                     <img src="../resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="../resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, ../resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
@@ -56,11 +56,11 @@
         </div>
     </div>
     <section class="containerFormulary">
-        <h2 class="hidden">
+        <h2 aria-level="2" class="hidden">
             Formulaire de contact
         </h2>
         <div class="formContactContainer formBecomeContainer">
-            <form action="#" method="get" class="formContact formBecomeExpo">
+            <form action="#" method="get" class="formContact formBecomeExpo" role="form" aria-label="Achat de billets">
                 <div class="containerInputLabel">
                     <div class="containerInput containerInputBecomeExpo">
                         <label for="nameMarket">Nom du commerce</label>

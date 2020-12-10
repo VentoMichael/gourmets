@@ -14,16 +14,15 @@
         {{ Request::is('contact') ? ' | Contact' : ""}}
         {{ Request::is('tickets') ? ' | Billets' : ""}}
     </title>
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('resources/img/favicon.png') }}">
 </head>
 <body>
-<h1 class="hidden">Le marché des gourmets</h1>
+<h1 aria-level="1" class="hidden">Le marché des gourmets</h1>
 <nav class="navbar" id="navbar">
-    <div class="navbrand">
+    <div class="navbrand" role="banner">
         <a href="/"><img class="logo" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets"></a>
-        <div class="burger" id="burger">
+        <div class="burger" id="burger" aria-label="menu">
 			<span class="burger-open">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
 					<g fill="rgba(78, 0, 47, 1)" fill-rule="evenodd">
@@ -31,7 +30,7 @@
 					</g>
 				</svg>
 			</span>
-            <span class="burger-close">
+            <span class="burger-close" aria-label="menu">
 				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
 					<path fill="rgba(78, 0, 47, 1)" fill-rule="evenodd"
                           d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"/>
@@ -39,7 +38,7 @@
 			</span>
         </div>
     </div>
-    <ul class="menu" id="menu">
+    <ul class="menu" id="menu" role="navigation">
         <li class="itemMenu {{ Request::is('/') ? "current_page_item" : "" }}">
             <a href="{{route('dashboard.index')}}">
                 Accueil
@@ -77,12 +76,12 @@
         </li>
     </ul>
 </nav>
-<main>
+<main role="main">
     @yield('content')
 </main>
 <footer>
     <section>
-        <h2 class="hidden">
+        <h2 aria-level="2" class="hidden">
             Informations pratiques
         </h2>
         <div class="containerPracticalInformation">
@@ -90,7 +89,7 @@
                 <div>
                     <div class="pictoDateFooter">
                     </div>
-                    <h3 class="titleDateFooter">
+                    <h3 aria-level="3" class="titleDateFooter">
                         Quand ?
                     </h3>
                 </div>
@@ -107,7 +106,7 @@
                 <div>
                     <div class="pictoPriceFooter">
                     </div>
-                    <h3 class="titlePriceFooter">
+                    <h3 aria-level="3" class="titlePriceFooter">
                         Prix ?
                     </h3>
                 </div>
@@ -124,7 +123,7 @@
                 <div>
                     <div class="pictoLocationFooter">
                     </div>
-                    <h3 class="titleLocationFooter">
+                    <h3 aria-level="3" class="titleLocationFooter">
                         Où ?
                     </h3>
                 </div>
@@ -140,14 +139,14 @@
         </div>
     </section>
     <a href="{{route('dashboard.index')}}">
-        <img class="logoFooter" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets">
+        <img class="logoFooter" src="../resources/svg/Logo_club.png" alt="Redirection vers la page d'acceuil">
     </a>
-    <div>
+    <div role="banner">
 
         <p class="actualityFooter"><a href="#" class="containerActualityFooter">Suivez notre actualité sur :<img
                     src="../resources/svg/facebook.svg"
-                    class="logoFcb" alt="logo Facebook"></a></p>
-
+                    class="logoFcb" alt="logo Facebook"></a>
+        </p>
     </div>
     <small>Placé sous le patronage de : Simonis Isabelle, Mottard Paul-Emile et Javaux Jean-Michel</small>
 </footer>

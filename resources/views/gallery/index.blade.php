@@ -6,12 +6,12 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Revivez notre derniére édition
                         </h2>
                     </div>
@@ -42,12 +42,12 @@
         </div>
     </section>
     <section>
-        <h2 class="hidden">
+        <h2 aria-level="2" class="hidden">
             Méthode de filtrage
         </h2>
         <div class="containerFiltersAll containerFilterGallery">
             <div class="containerFilters">
-            <span class="pageFilter">
+            <span class="pageFilter filterItemPage">
                 <label for="filterPage">Nombre d'items par page</label>
                 <select name="filterPage" id="filterPage">
                     <option value="4" selected>4</option>
@@ -59,7 +59,7 @@
         </div>
     </section>
     <section>
-        <h2 class="hidden">
+        <h2 aria-level="2" class="hidden">
             Gallerie d'images
         </h2>
         <div class="containerImagesGallery">

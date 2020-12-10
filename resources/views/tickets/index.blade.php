@@ -6,12 +6,12 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Le billet qui vous fera voyager
                         </h2>
                     </div>
@@ -41,23 +41,23 @@
         </div>
     </section>
     <section class="containerFormulary">
-        <h2 class="hidden">
+        <h2 aria-level="2" class="hidden">
             Formulaire d'achat de billet(s)
         </h2>
         <div class="informationsContact">
             <p class="titleForm">
                 Mon panier
             </p>
-            <ul class="titleForm containerShoppingCart">
-                <li class="infoBuyTicket">1 ticket</li>
-                <li class="infoBuyPrice">6€ l'unité</li>
+            <ul class="titleForm containerShoppingCart" role="list">
+                <li class="infoBuyTicket" role="listitem">1 ticket</li>
+                <li class="infoBuyPrice" role="listitem">6€ l'unité</li>
             </ul>
             <p class="itemTotalPrice">
                 TOTAL : 6.00€
             </p>
         </div>
         <div class="formContactContainer">
-            <form action="#" method="get" class="formContact">
+            <form action="#" method="get" class="formContact" role="form" aria-label="Achat de billets">
                 <div>
                     <div class="containerInput">
                         <label for="nameSurname">Nom et prénom </label>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="form-example">
-                    <button type="submit" class="btnCta btnContact">Acheter un billet<span class="arrowCta"></span>
+                    <button type="submit" role="button" aria-pressed="false" class="btnCta btnContact">Acheter un billet<span class="arrowCta"></span>
                     </button>
                 </div>
             </form>

@@ -6,17 +6,17 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Notre liste des exposants
                         </h2>
                     </div>
                 </div>
-                <div class="containerImagesHome">
+                <div class="containerImagesHome" role="img">
                     <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
@@ -55,7 +55,7 @@
         </div>
     </div>
     <section>
-        <h2 class="hidden">
+        <h2 aria-level="2" class="hidden">
             Les différents Exposants
         </h2>
         <div class="containerFiltersAll">
@@ -88,9 +88,9 @@
                         <option value="20">20</option>
                     </select>
                 </span>
-                <span class="searchFilter" id="searchFilter">
+                <span class="searchFilter" id="searchFilter" role="search">
                     <label id="expoSearchLabel" for="expo-search">Chercher un exposant</label>
-                    <input class="search" type="search" id="expo-search" name="exposant" placeholder="Rob Harry ...">
+                    <input class="search" type="search" spellcheck="false" id="expo-search" name="exposant" placeholder="Rob Harry ...">
                 </span>
             </div>
         </div>
@@ -98,7 +98,7 @@
             <section class="containerExposant">
                 <div>
                     <img src="resources/svg/bottle.svg" alt="Picto of wine bottle">
-                    <h3>
+                    <h3 aria-level="3">
                         Vins nobles de la Sicile
                     </h3>
                     <p class="textRegionExposant">Sicile</p>
@@ -129,7 +129,7 @@
             </section>
             <section class="containerExposant">
                 <img src="resources/svg/cheese.svg" alt="Picto of cheese">
-                <h3>
+                <h3 aria-level="3">
                     Rob Market
                 </h3>
                 <p class="textRegionExposant">France</p>

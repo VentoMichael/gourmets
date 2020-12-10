@@ -6,12 +6,12 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Un restaurant avec des aliments à votre goût
                         </h2>
                     </div>
@@ -46,63 +46,63 @@
     </section>
     <section>
         <div class="containerMenu">
-            <h2>
+            <h2 aria-level="2">
                 Menu du restaurant
             </h2>
             <section class="containerPrincipalMeat">
-                <h3 class="menuPrincipalMeat">
+                <h3 aria-level="3" class="menuPrincipalMeat">
                     Plats
                 </h3>
-                <ul>
-                    <li>
+                <ul role="list">
+                    <li role="listitem">
                         Croquettes aux crevettes grises et salade composée<span>13€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Rigatoni aux petits lardons, basilic et tomates confites<span>13€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Cannellonis a la ricotta et épinards (Végétarien)<span>13€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Boulets à la Liégeoise (Frites, salades)<span>14€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Boulets de volaille a l’estragon (Frites, salade)<span>14€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Carbonnade de boeuf, carottes fondantes et galettes de pommes de terre<span>15€</span>
                     </li>
                 </ul>
             </section>
             <section class="containerPrincipalMeat containerSandwichs">
-                <h3 class="menuSandwichs">
+                <h3 aria-level="3" class="menuSandwichs">
                     Sandwichs
                 </h3>
-                <ul>
-                    <li>
+                <ul role="list">
+                    <li role="listitem">
                         Dagobert
                         <span>5€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Campagnard (Brie, miel, lardons, roquette)
                         <span>5€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Italien (Jambon fumé, roquette, tomate confite)
                         <span>5€</span>
                     </li>
                 </ul>
             </section>
             <section class="containerPrincipalMeat">
-                <h3 class="menuDesserts">
+                <h3 aria-level="3" class="menuDesserts">
                     Desserts
                 </h3>
-                <ul>
-                    <li>
+                <ul role="list">
+                    <li role="listitem">
                         Mousse au chocolat, caramel au beurre salé
                         <span>5€</span>
                     </li>
-                    <li>
+                    <li role="listitem">
                         Tiramisu au spéculoos et fruits rouges
                         <span>5€</span>
                     </li>

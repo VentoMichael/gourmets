@@ -6,12 +6,12 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Vins nobles de Siciles
                         </h2>
                     </div>
@@ -44,7 +44,7 @@
     </section>
     <section>
         <div class="containerMenu containerPersoExpo">
-            <h2 class="hidden">
+            <h2 aria-level="2" class="hidden">
                 Informations personnelles de Vins nobles de Sicile
             </h2>
             <div class="containerInformationsPerso">

@@ -6,12 +6,12 @@
                 <div class="containerTicketsHome" id="containerTicketsHome">
                     <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
-                <div class="logo logoHome">
+                <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 class="titleExposant">
+                        <h2 aria-level="2" aria-level="2" class="titleExposant">
                             Des bénévoles dans le but d’aider
                         </h2>
                     </div>
@@ -41,13 +41,13 @@
         </div>
     </section>
     <section>
-        <h2 class="hidden">
+        <h2 aria-level="2" aria-level="2" class="hidden">
             À propos de nous
         </h2>
         <div class="containerAboutUs">
             <section class="containerAboutUsWhySection">
                 <img src="resources/svg/question.svg" alt="">
-                <h3>
+                <h3 aria-level="3">
                     Pourquoi ?
                 </h3>
                 <div>
@@ -58,7 +58,7 @@
             </section>
             <section class="containerAboutUsHowSection">
                 <img src="resources/svg/how.svg" alt="">
-                <h3>
+                <h3 aria-level="3">
                     Comment ?
                 </h3>
                 <div>
@@ -69,8 +69,8 @@
             </section>
         </div>
         <div>
-            <section>
-                <h3 class="hidden">
+            <section class="containerAbout">
+                <h3 aria-level="3" class="hidden">
                     Notre historique
                 </h3>
                 <div class="containerHistorical">
