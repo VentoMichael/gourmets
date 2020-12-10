@@ -93,7 +93,24 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// menu
+//form search
+var formSearchInput = document.getElementById("expo-search");
+var searchFilter = document.getElementById("searchFilter");
+var labelBefore = document.querySelector(".searchFilter");
+var containerFilters = document.querySelector(".containerFilters");
+var allDivsFilters = document.querySelectorAll(".containerFilters span");
+labelBefore.addEventListener('click', function () {
+  labelBefore.classList.add('loupeItem');
+  formSearchInput.classList.add('open');
+  formSearchInput.focus();
+  searchFilter.classList.add('searchFilterActif');
+  containerFilters.classList.add('containerFiltersActif');
+
+  for (var i = 0; i <= allDivsFilters.length; i++) {
+    allDivsFilters[i].classList.add('filtersExposants');
+  }
+}); // menu
+
 var burgerMenu = document.getElementById("burger");
 var navbarMenu = document.getElementById("menu");
 var containerTicketsHome = document.getElementById("containerTicketsHome");
@@ -143,25 +160,7 @@ function showSlides(n) {
   }
 
   slides[slideIndex - 1].style.display = "block";
-} //form search
-
-
-var formSearchInput = document.getElementById("expo-search");
-var searchFilter = document.getElementById("searchFilter");
-var labelBefore = document.querySelector(".searchFilter");
-var containerFilters = document.querySelector(".containerFilters");
-var allDivsFilters = document.querySelectorAll(".containerFilters span");
-labelBefore.addEventListener('click', function () {
-  labelBefore.classList.add('loupeItem');
-  formSearchInput.classList.add('open');
-  formSearchInput.focus();
-  searchFilter.classList.add('searchFilterActif');
-  containerFilters.classList.add('containerFiltersActif');
-
-  for (var i = 0; i <= allDivsFilters.length; i++) {
-    allDivsFilters[i].classList.add('filtersExposants');
-  }
-});
+}
 
 /***/ }),
 

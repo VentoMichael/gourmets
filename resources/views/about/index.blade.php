@@ -11,7 +11,7 @@
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 aria-level="2" aria-level="2" class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Des bénévoles dans le but d’aider
                         </h2>
                     </div>
@@ -41,7 +41,7 @@
         </div>
     </section>
     <section>
-        <h2 aria-level="2" aria-level="2" class="hidden">
+        <h2 aria-level="2" class="hidden">
             À propos de nous
         </h2>
         <div class="containerAboutUs">

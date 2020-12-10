@@ -38,7 +38,8 @@
                     Alors, n’hésitez pas à nous rendre visite à Amay lors de cette 21<sup>e</sup> édition.
                 </p>
                 <div>
-                    <a href="{{route('expoBecome.index')}}" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
+                    <a href="{{route('expoBecome.index')}}" class="btnCta">Devenir exposant <span
+                            class="arrowCta"></span></a>
                 </div>
             </div>
         </div>
@@ -51,15 +52,18 @@
             </p>
         </div>
         <div class="containerButtonExpo">
-            <a href="{{route('expoBecome.index')}}" class="btnCta btnExposant">Devenir exposant <span class="arrowCta"></span></a>
+            <a href="{{route('expoBecome.index')}}" class="btnCta btnExposant">Devenir exposant <span
+                    class="arrowCta"></span></a>
         </div>
     </div>
-    <section>
+    <section class="sectionContainerExposants">
         <h2 aria-level="2" class="hidden">
             Les différents Exposants
         </h2>
         <div class="containerFiltersAll">
             <div class="containerFilters">
+                <form action="#">
+                    <div class="container3firstFilters">
                 <span class="countriesFilter">
                     <label for="country">Pays</label>
                     <select name="country" id="country">
@@ -72,7 +76,7 @@
                         </option>
                     </select>
                 </span>
-                <span class="productsFilter">
+                        <span class="productsFilter">
                     <label for="product">Produits</label>
                     <select name="product" id="product">
                         <option value="" disabled selected>Produits</option>
@@ -80,7 +84,7 @@
                         <option value="wine">Vins</option>
                     </select>
                 </span>
-                <span class="pageFilter">
+                        <span class="pageFilter">
                     <label for="filterPage">Nombre d'item</label>
                     <select name="filterPage" id="filterPage">
                         <option value="4" selected>4</option>
@@ -88,10 +92,18 @@
                         <option value="20">20</option>
                     </select>
                 </span>
-                <span class="searchFilter" id="searchFilter" role="search">
-                    <label id="expoSearchLabel" for="expo-search">Chercher un exposant</label>
-                    <input class="search" type="search" spellcheck="false" id="expo-search" name="exposant" placeholder="Rob Harry ...">
-                </span>
+                    </div>
+                    <button>
+                        Appliquer les filtres
+                    </button>
+                </form>
+                <form action="#">
+                    <span class="searchFilter" id="searchFilter" role="search">
+                        <label id="expoSearchLabel" for="expo-search">Chercher un exposant</label>
+                        <input class="search" type="search" spellcheck="false" id="expo-search" name="exposant"
+                               placeholder="Rob Harry ...">
+                    </span>
+                </form>
             </div>
         </div>
         <div class="containerExposants">
@@ -124,7 +136,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
+                    <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span
+                            class="arrowCta"></span></a>
                 </div>
             </section>
             <section class="containerExposant">
@@ -154,9 +167,29 @@
                     </div>
                 </div>
                 <div>
-                    <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
+                    <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span
+                            class="arrowCta"></span></a>
                 </div>
             </section>
+        </div>
+        <div class="containerPaginate">
+            <ul class="listPaginate">
+                <li class="currentPaginate">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    <a href="" #>12</a>
+                </li>
+            </ul>
         </div>
     </section>
 @endsection

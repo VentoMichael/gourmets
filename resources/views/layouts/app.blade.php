@@ -4,26 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="title" content="Marché des gourmets - Produits locaux">
+    <meta name="description"
+          content="Des exposants venus partout de l'europe pour vous proposez les meilleurs produits locaux."/>
+    <meta name="keywords" content="Vins, fromages, marché, exposants, billets">
+    <meta name="language" content="French">
+    <meta name="author" content="Vento Michael"/>
     <title>
         {{ 'Gourmets' }}
         {{ Request::is('/') ? " | Accueil" : "" }}
-        {{ Request::is('exposants/*') || Request::is('exposants') ? ' | Exposants' : ""}}
-        {{ Request::is('gallery') ? ' | Album photos' : ""}}
-        {{ Request::is('restaurant') ? ' | Restaurant' : ""}}
-        {{ Request::is('about') ? ' | À propos de nous' : ""}}
-        {{ Request::is('contact') ? ' | Contact' : ""}}
-        {{ Request::is('tickets') ? ' | Billets' : ""}}
+        {{ Request::is('exposants/*') || Request::is('exposants') ? ' | Exposants' : "" }}
+        {{ Request::is('gallery') ? ' | Album photos' : "" }}
+        {{ Request::is('restaurant') ? ' | Restaurant' : "" }}
+        {{ Request::is('about') ? ' | À propos de nous' : "" }}
+        {{ Request::is('contact') ? ' | Contact' : "" }}
+        {{ Request::is('tickets') ? ' | Billets' : "" }}
     </title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('resources/img/favicon.png') }}">
 </head>
 <body>
-<h1 aria-level="1" class="hidden">Le marché des gourmets</h1>
+
 <nav class="navbar" id="navbar">
     <div class="navbrand" role="banner">
-        <a href="/"><img class="logo" src="../resources/svg/Logo_club.png" alt="Redirection vers la page d'accueil"></a>
+        <div></div>
         <div class="burger" id="burger" aria-label="menu">
-			<span class="burger-open">
+            <span class="burger-open">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
 					<g fill="rgba(78, 0, 47, 1)" fill-rule="evenodd">
 						<path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/>
@@ -38,43 +44,50 @@
 			</span>
         </div>
     </div>
-    <ul class="menu" id="menu" role="navigation">
-        <li class="itemMenu {{ Request::is('/') ? "current_page_item" : "" }}">
-            <a href="{{route('dashboard.index')}}">
-                Accueil
-            </a>
-        </li>
-        <li class="itemMenu {{ Request::is('exposants/*') || Request::is('exposants') ? "current_page_item" : "" }}">
-            <a href="{{route('exposants.index')}}">
-                Exposants
-            </a>
-        </li>
-        <li class="itemMenu {{ Request::is('gallery') ? "current_page_item" : "" }}">
-            <a href="{{route('gallery.index')}}">
-                Photos
-            </a>
-        </li>
-        <li class="itemMenu {{ Request::is('restaurant') ? "current_page_item" : "" }}">
-            <a href="{{route('restaurant.index')}}">
-                Restaurant
-            </a>
-        </li>
-        <li class="itemMenu {{ Request::is('about') ? "current_page_item" : "" }}">
-            <a href="{{route('about.index')}}">
-                Qui sommes-nous ?
-            </a>
-        </li>
-        <li class="itemMenu {{ Request::is('contact') ? "current_page_item" : "" }}">
-            <a href="{{route('contact.index')}}">
-                Contact
-            </a>
-        </li>
-        <li class="containerBtnTickets btnTicketsMenu">
-            <a href="{{route('tickets.index')}}" class="btnTickets">
-                Billets
-            </a>
-        </li>
-    </ul>
+    <div>
+        <ul class="menu" id="menu" role="navigation">
+            <li class="itemMenu">
+                <a href="{{route('dashboard.index')}}">
+                    <h1 aria-level="1" class="principalTitle">Le marché des gourmets</h1>
+                </a>
+            </li>
+            <li class="itemMenu {{ Request::is('/') ? "current_page_item" : "" }}" aria-current="{{ Request::is('/') ? "page" : "" }}">
+                <a href="{{route('dashboard.index')}}">
+                    Accueil
+                </a>
+            </li>
+            <li class="itemMenu {{ Request::is('exposants/*') || Request::is('exposants') ? "current_page_item" : "" }}">
+                <a href="{{route('exposants.index')}}">
+                    Exposants
+                </a>
+            </li>
+            <li class="itemMenu {{ Request::is('gallery') ? "current_page_item" : "" }}" aria-current="{{ Request::is('gallery') ? "page" : "" }}">
+                <a href="{{route('gallery.index')}}">
+                    Photos
+                </a>
+            </li>
+            <li class="itemMenu {{ Request::is('restaurant') ? "current_page_item" : "" }}" aria-current="{{ Request::is('restaurant') ? "page" : "" }}">
+                <a href="{{route('restaurant.index')}}">
+                    Restaurant
+                </a>
+            </li>
+            <li class="itemMenu {{ Request::is('about') ? "current_page_item" : "" }}" aria-current="{{ Request::is('about') ? "page" : "" }}">
+                <a href="{{route('about.index')}}">
+                    À propos
+                </a>
+            </li>
+            <li class="itemMenu {{ Request::is('contact') ? "current_page_item" : "" }}" aria-current="{{ Request::is('contact') ? "page" : "" }}">
+                <a href="{{route('contact.index')}}">
+                    Contact
+                </a>
+            </li>
+            <li class="containerBtnTickets btnTicketsMenu">
+                <a href="{{route('tickets.index')}}" class="btnTickets">
+                    Billets
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <main role="main">
     @yield('content')
@@ -119,7 +132,7 @@
                     </p>
                 </div>
             </section>
-            <section>
+            <section itemscope itemtype="https://schema.org/Place">
                 <div>
                     <div class="pictoLocationFooter">
                     </div>
@@ -127,13 +140,15 @@
                         Où ?
                     </h3>
                 </div>
-                <div class="textPracticalInformation">
-                    <p>
-                        À la salle des moines,
-                    </p>
-                    <p>
-                        Val-Saint-Lambert, 4540 Amay
-                    </p>
+                <div class="textPracticalInformation" itemprop="address" itemscope itemtype="https://schema.org/Place">
+                    <div>
+                        <p>
+                            À la salle des moines,
+                        </p>
+                        <p itemprop="streetAddress">
+                            Val-Saint-Lambert, <span itemprop="postalCode">4540</span> Amay
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
