@@ -192,7 +192,7 @@
                     <div class="containerSlide">
                         <div>
                             <h3 aria-level="3">
-                                Aveve
+                                Rob Market
                             </h3>
                             <p class="regionExposant">
                                 Belgique
@@ -210,17 +210,12 @@
                             </div>
                         </div>
                         <div class="containerTextExposant">
-                            <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
-                                classiques
-                                qui
-                                expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
-                                volcan
-                                actif d'Europe. Son caractère à la fois raffiné, austère et puissant lui donne un goût
-                                original
-                                et
-                                unique!</p>
+                            <p class="textExposant">Patrice et Philippe Marchand ne sont pas frères par hasard tant leur passion commune pour les
+                                fromages d’exception est intense. Un lien d’autant plus fort qu’ils partagent des secrets de famille
+                                pour fabriquer de vraies merveilles ! Rob vous propose près de 30 fromages créés et affinés par les
+                                frères Marchand.</p>
                             <div>
-                                <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
+                                <a href="{{route('expoShow.index')}}" class="btnCta">Rob Market <span class="arrowCta"></span></a>
                             </div>
                         </div>
                     </div>

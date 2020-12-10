@@ -97,7 +97,7 @@
         <div class="containerExposants">
             <section class="containerExposant">
                 <div>
-                    <img src="resources/svg/bottle.svg" alt="Picto of wine bottle">
+                    <img src="resources/svg/wine.svg" alt="Picto d'une bouteille de vin">
                     <h3 aria-level="3">
                         Vins nobles de la Sicile
                     </h3>
@@ -128,7 +128,7 @@
                 </div>
             </section>
             <section class="containerExposant">
-                <img src="resources/svg/cheese.svg" alt="Picto of cheese">
+                <img src="resources/svg/cheese.svg" alt="Picto de fromage">
                 <h3 aria-level="3">
                     Rob Market
                 </h3>

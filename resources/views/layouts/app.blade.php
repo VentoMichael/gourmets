@@ -21,7 +21,7 @@
 <h1 aria-level="1" class="hidden">Le marché des gourmets</h1>
 <nav class="navbar" id="navbar">
     <div class="navbrand" role="banner">
-        <a href="/"><img class="logo" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets"></a>
+        <a href="/"><img class="logo" src="../resources/svg/Logo_club.png" alt="Redirection vers la page d'accueil"></a>
         <div class="burger" id="burger" aria-label="menu">
 			<span class="burger-open">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">

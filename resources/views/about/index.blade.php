@@ -46,7 +46,7 @@
         </h2>
         <div class="containerAboutUs">
             <section class="containerAboutUsWhySection">
-                <img src="resources/svg/question.svg" alt="">
+                <img src="resources/svg/question.svg" alt="Picto d'un point d'interrogation">
                 <h3 aria-level="3">
                     Pourquoi ?
                 </h3>
@@ -57,7 +57,7 @@
                 </div>
             </section>
             <section class="containerAboutUsHowSection">
-                <img src="resources/svg/how.svg" alt="">
+                <img src="resources/svg/how.svg" alt="Picto representant le mot comment">
                 <h3 aria-level="3">
                     Comment ?
                 </h3>
