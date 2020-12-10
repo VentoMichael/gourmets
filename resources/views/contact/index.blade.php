@@ -1,34 +1,34 @@
 @extends('layouts.app')
 @section('content')
     <section class="sectionContainerHome">
-        <div class="containerHome">
+        <div class="containerHome" itemscope itemtype="https://schema.org/Thing">
             <div class="containerPresentationHome">
                 <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
+                    <a class="ctaTickets" id="ctaTickets" href="{{route('tickets.index')}}" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 aria-level="2" class="titleExposant">
+                        <h2 aria-level="2" itemprop="name" class="titleExposant">
                             Une question ou une envie spéciale ?
                         </h2>
                     </div>
                 </div>
                 <div class="containerImagesHome">
-                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
                 </div>
             </div>
-            <div class="containerTextHome">
+            <div itemprop="description" class="containerTextHome">
                 <p>
                     Le Marché des Gourmets est disponible pour <b>toute question</b>, une envie spéciale ou même une <b>simple
                         envie de discuter ?</b>
@@ -59,13 +59,13 @@
             </ul>
         </div>
         <div class="formContactContainer">
-            <form action="#" method="get" class="formContact">
-                <div>
+            <form action="#" method="get" class="formContact" itemscope itemtype="https://schema.org/Text">
+                <div itemscope itemtype="https://schema.org/Person">
                     <div class="containerInput">
-                        <label for="nameSurname">Nom et prénom </label>
+                        <label for="nameSurname"><span itemprop="familyName">Nom</span></span> et <span itemprop="givenName">prénom</span></label>
                         <input type="text" name="nameSurname" id="nameSurname" required placeholder="Lardo Marco">
                     </div>
-                    <div class="containerInput">
+                    <div class="containerInput" itemprop="email">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" required placeholder="lardomarco@gmail.com">
                     </div>

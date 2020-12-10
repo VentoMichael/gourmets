@@ -1,17 +1,17 @@
 @extends('layouts.app')
 @section('content')
     <section class="sectionContainerHome">
-        <div class="containerHome">
+        <div class="containerHome" itemscope itemtype="https://schema.org/Thing">
             <div class="containerPresentationHome">
                 <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
+                    <a class="ctaTickets" id="ctaTickets" href="{{route('tickets.index')}}" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 aria-level="2" class="titleExposant">
+                        <h2 aria-level="2" itemprop="name" class="titleExposant">
                             Vins nobles de Siciles
                         </h2>
                     </div>
@@ -31,7 +31,7 @@
                          sizes="100vw" alt="Image du salon du marché des gourmets">
                 </div>
             </div>
-            <div class="containerTextHome">
+            <div itemprop="description" class="containerTextHome">
                 <p>
                     Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins classiques qui expriment pleinement
                     son extraordinaire terroir, à savoir celui de l'Etna, le plus grand volcan actif d'Europe.
@@ -43,7 +43,7 @@
         </div>
     </section>
     <section>
-        <div class="containerMenu containerPersoExpo">
+        <div class="containerMenu containerPersoExpo" itemscope itemtype="https://schema.org/Organization">
             <h2 aria-level="2" class="hidden">
                 Informations personnelles de Vins nobles de Sicile
             </h2>
@@ -52,15 +52,15 @@
                     <p class="label">
                         Nom du commerce
                     </p>
-                    <p class="infoPersoExpo">
+                    <p class="infoPersoExpo" itemprop="legalName">
                         Vins noble de la Sicile
                     </p>
                 </div>
-                <div>
+                <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
                     <p class="label">
                         Adresse et n°
                     </p>
-                    <p class="infoPersoExpo">
+                    <p class="infoPersoExpo" itemprop="streetAddress">
                         Rue blanche, 4, bp 10
                     </p>
                 </div>
@@ -68,15 +68,15 @@
                     <p class="label">
                         Email
                     </p>
-                    <p class="infoPersoExpo">
+                    <p class="infoPersoExpo" itemprop="email">
                         <a href="mailto:noblessicile@hotmail.com"></a>noblessicile@hotmail.com
                     </p>
                 </div>
-                <div>
+                <div itemprop="location" itemscope itemtype="https://schema.org/PostalAddress">
                     <p class="label">
                         Pays
                     </p>
-                    <p class="infoPersoExpo">
+                    <p class="infoPersoExpo" itemprop="addressCountry">
                         Sicile
                     </p>
                 </div>
@@ -84,7 +84,7 @@
                     <p class="label">
                         Téléphone
                     </p>
-                    <p class="infoPersoExpo">
+                    <p class="infoPersoExpo" itemprop="telephone">
                         <a href="tel:+32494827265">0494 827 265</a>
                     </p>
                 </div>
@@ -92,7 +92,7 @@
                     <p class="label">
                         Site internet
                     </p>
-                    <p class="infoPersoExpo">
+                    <p class="infoPersoExpo" itemprop="sameAs">
                         <a href="http://www.champagne-leseurre.com"></a>http://www.champagne-leseurre.com
                     </p>
                 </div>

@@ -1,17 +1,17 @@
 @extends('layouts.app')
 @section('content')
     <section class="sectionContainerHome">
-        <div class="containerHome">
+        <div class="containerHome" itemscope itemtype="https://schema.org/Thing">
             <div class="containerPresentationHome">
                 <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
+                    <a class="ctaTickets" id="ctaTickets" href="{{route('tickets.index')}}" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 aria-level="2" class="titleExposant">
+                        <h2 aria-level="2" itemprop="name" class="titleExposant">
                             Notre liste des exposants
                         </h2>
                     </div>
@@ -28,7 +28,7 @@
                          sizes="100vw" alt="Image du salon du marché des gourmets">
                 </div>
             </div>
-            <div class="containerTextHome">
+            <div itemprop="description" class="containerTextHome">
                 <p>
                     Au marché des gourmets d’Amay, nous receuillons <b>plus de 30 exposants !</b> Ces
                     personnes passionnées donnent tous les jours <b>le meilleurs d’eux-mêmes</b> pour vous proposer <b>des
@@ -107,14 +107,14 @@
             </div>
         </div>
         <div class="containerExposants">
-            <section class="containerExposant">
+            <section class="containerExposant" itemscope itemtype="https://schema.org/Organization">
                 <div>
                     <img src="resources/svg/wine.svg" alt="Picto d'une bouteille de vin">
-                    <h3 aria-level="3">
+                    <h3 aria-level="3" itemprop="legalName">
                         Vins nobles de la Sicile
                     </h3>
-                    <p class="textRegionExposant">Sicile</p>
-                    <p>
+                    <p class="textRegionExposant" itemprop="location">Sicile</p>
+                    <p itemprop="description">
                         Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins classiques qui expriment
                         pleinement
                         son extraordinaire terroir, à savoir celui de l'Etna, le plus grand volcan actif d'Europe. Son
@@ -135,18 +135,18 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div itemprop="sameAs">
                     <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span
                             class="arrowCta"></span></a>
                 </div>
             </section>
-            <section class="containerExposant">
+            <section class="containerExposant" itemscope itemtype="https://schema.org/Organization">
                 <img src="resources/svg/cheese.svg" alt="Picto de fromage">
-                <h3 aria-level="3">
+                <h3 aria-level="3" itemprop="legalName">
                     Rob Market
                 </h3>
-                <p class="textRegionExposant">France</p>
-                <p>
+                <p class="textRegionExposant" itemprop="location">France</p>
+                <p itemprop="description">
                     Patrice et Philippe Marchand ne sont pas frères par hasard tant leur passion commune pour les
                     fromages d’exception est intense. Un lien d’autant plus fort qu’ils partagent des secrets de famille
                     pour fabriquer de vraies merveilles ! Rob vous propose près de 30 fromages créés et affinés par les
@@ -166,7 +166,7 @@
                         Bio
                     </div>
                 </div>
-                <div>
+                <div itemprop="sameAs">
                     <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span
                             class="arrowCta"></span></a>
                 </div>
@@ -187,7 +187,7 @@
                     ...
                 </li>
                 <li>
-                    <a href="" #>12</a>
+                    <a href="#">12</a>
                 </li>
             </ul>
         </div>
