@@ -1,18 +1,18 @@
 @extends('layouts.app')
 @section('content')
     <section class="sectionContainerHome">
-        <div class="containerHome" itemscope itemtype="https://schema.org/Thing">
+        <div class="containerHome">
 
             <div class="containerPresentationHome">
                 <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="{{route('tickets.index')}}" title="Billets">Billet</a>
+                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 aria-level="2" itemprop="name">
+                        <h2 aria-level="2">
                             Le marché des gourmets
                         </h2>
                     </div>
@@ -30,18 +30,18 @@
                     </div>
                 </div>
                 <div class="containerImagesHome">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
                 </div>
             </div>
-            <div itemprop="description" class="containerTextHome">
+            <div class="containerTextHome">
                 <p>
                     Le Marché des Gourmets est <b>un événement annuel</b> organisé par le Rotary Club de Flémalle sur le
                     prestigieux site <b>de Val-Saint-Lambert à la salle des moines</b> afin d'obtenir des fonds pour
@@ -151,29 +151,29 @@
             </div>
             <div class="slideshow-container">
 
-                <section class="mySlides fade" itemscope itemtype="https://schema.org/Organization">
+                <section class="mySlides fade">
                     <div class="containerSlide">
                         <div>
-                            <h3 aria-level="3" itemprop="legalName">
+                            <h3 aria-level="3">
                                 Vins nobles de la sicile
                             </h3>
-                            <p class="regionExposant" itemprop="location">
+                            <p class="regionExposant">
                                 Sicile
                             </p>
                             <div class="containerImagesHome">
-                                <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                                      srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                                      sizes="100vw" alt="Image d'un exposant">
-                                <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                                      srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                                      sizes="100vw" alt="Image d'un exposant">
-                                <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                                      srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                                      sizes="100vw" alt="Image d'un exposant">
                             </div>
                         </div>
                         <div class="containerTextExposant">
-                            <p class="textExposant" itemprop="description">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
+                            <p class="textExposant">Situé à 600 mètres d'altitude, au nord-est de l'Etna. Des vins
                                 classiques
                                 qui
                                 expriment pleinement son extraordinaire terroir, à savoir celui de l'Etna, le plus grand
@@ -182,39 +182,39 @@
                                 original
                                 et
                                 unique!</p>
-                            <div itemprop="sameAs">
+                            <div>
                                 <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="mySlides fade" itemscope itemtype="https://schema.org/Organization">
+                <section class="mySlides fade">
                     <div class="containerSlide">
                         <div>
-                            <h3 aria-level="3" itemprop="legalName">
+                            <h3 aria-level="3">
                                 Rob Market
                             </h3>
-                            <p class="regionExposant" itemprop="location">
+                            <p class="regionExposant">
                                 Belgique
                             </p>
                             <div class="containerImagesHome">
-                                <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                                      srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                                      sizes="100vw" alt="Image d'un exposant">
-                                <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                                      srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                                      sizes="100vw" alt="Image d'un exposant">
-                                <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                                <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                                      srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                                      sizes="100vw" alt="Image d'un exposant">
                             </div>
                         </div>
                         <div class="containerTextExposant">
-                            <p class="textExposant" itemprop="description">Patrice et Philippe Marchand ne sont pas frères par hasard tant leur passion commune pour les
+                            <p class="textExposant">Patrice et Philippe Marchand ne sont pas frères par hasard tant leur passion commune pour les
                                 fromages d’exception est intense. Un lien d’autant plus fort qu’ils partagent des secrets de famille
                                 pour fabriquer de vraies merveilles ! Rob vous propose près de 30 fromages créés et affinés par les
                                 frères Marchand.</p>
-                            <div itemprop="sameAs">
+                            <div>
                                 <a href="{{route('expoShow.index')}}" class="btnCta">Rob Market <span class="arrowCta"></span></a>
                             </div>
                         </div>

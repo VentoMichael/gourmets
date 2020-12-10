@@ -1,34 +1,34 @@
 @extends('layouts.app')
 @section('content')
     <section class="sectionContainerHome">
-        <div class="containerHome" itemscope itemtype="https://schema.org/Thing">
+        <div class="containerHome">
             <div class="containerPresentationHome">
                 <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="{{route('tickets.index')}}" title="Billets">Billet</a>
+                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 aria-level="2" itemprop="name" class="titleExposant" itemprop="name">
+                        <h2 aria-level="2" class="titleExposant">
                             Des bénévoles dans le but d’aider
                         </h2>
                     </div>
                 </div>
                 <div class="containerImagesHome">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
                 </div>
             </div>
-            <div itemprop="description" class="containerTextHome">
+            <div class="containerTextHome">
                 <p>
                     Le Marché des Gourmets est une initiative du Rotary Club de Flémalle afin de <b>soutenir</b> des associations locales, nationales, voire internationales <b>d'aide aux plus démunis.</b> Tous les bénéfices du Marché sont intégralement <b>distribués à ces associations.</b>
                 </p>
@@ -56,13 +56,13 @@
                     </p>
                 </div>
             </section>
-            <section class="containerAboutUsHowSection" itemscope itemtype="https://schema.org/Organization">
+            <section class="containerAboutUsHowSection">
                 <img src="resources/svg/how.svg" alt="Picto representant le mot comment">
                 <h3 aria-level="3">
                     Comment ?
                 </h3>
                 <div>
-                    <p itemprop="makesOffer">
+                    <p>
                         Une initiative réunissant plus de <b>30 exposants passionnés,</b> ils donnent tous les jours <b>le meilleurs d’eux-mêmes</b> pour vous proposer <b>des produits sains et de qualité.</b>
                     </p>
                 </div>
@@ -73,11 +73,11 @@
                 <h3 aria-level="3" class="hidden">
                     Notre historique
                 </h3>
-                <div class="containerHistorical" itemscope itemtype="https://schema.org/Organization">
+                <div class="containerHistorical">
                     <img src="resources/img/market.jpg"
                          srcset="resources/img/market_small.jpg 320w, resources/img/market.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <p itemprop="knowsAbout">
+                    <p>
                         <b>Depuis plus de 20 ans,</b> nous organisons le marché des Gourmets, chaque année, dans lesquels <b>une trentaine d’exposants</b> vous proposent leurs meilleurs produits <b>d’une qualité irréprochable.</b>
                     </p>
                 </div>

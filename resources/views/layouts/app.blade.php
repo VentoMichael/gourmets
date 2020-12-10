@@ -24,8 +24,8 @@
     <link rel="shortcut icon" href="{{ asset('resources/img/favicon.png') }}">
 </head>
 <body>
-<header>
-<nav class="navbar" id="navbar">
+
+<nav class="navbar" id="navbar" role="navigation">
     <div class="navbrand" role="banner">
         <div></div>
         <div class="burger" id="burger" aria-label="menu">
@@ -45,52 +45,51 @@
         </div>
     </div>
     <div>
-        <ul class="menu" id="menu" role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-            <li itemprop="name" class="itemMenu">
-                <a itemprop="url" href="{{route('dashboard.index')}}">
+        <ul class="menu" id="menu">
+            <li class="itemMenu">
+                <a href="{{route('dashboard.index')}}">
                     <h1 aria-level="1" class="principalTitle">Le marché des gourmets</h1>
                 </a>
             </li>
-            <li itemprop="name" class="itemMenu {{ Request::is('/') ? "current_page_item" : "" }}" aria-current="{{ Request::is('/') ? "page" : "" }}">
-                <a itemprop="url" href="{{route('dashboard.index')}}">
+            <li class="itemMenu {{ Request::is('/') ? "current_page_item" : "" }}" aria-current="{{ Request::is('/') ? "page" : "" }}">
+                <a href="{{route('dashboard.index')}}">
                     Accueil
                 </a>
             </li>
-            <li itemprop="name" class="itemMenu {{ Request::is('exposants/*') || Request::is('exposants') ? "current_page_item" : "" }}">
-                <a itemprop="url" href="{{route('exposants.index')}}">
+            <li class="itemMenu {{ Request::is('exposants/*') || Request::is('exposants') ? "current_page_item" : "" }}">
+                <a href="{{route('exposants.index')}}">
                     Exposants
                 </a>
             </li>
-            <li itemprop="name" class="itemMenu {{ Request::is('gallery') ? "current_page_item" : "" }}" aria-current="{{ Request::is('gallery') ? "page" : "" }}">
-                <a itemprop="url" href="{{route('gallery.index')}}">
+            <li class="itemMenu {{ Request::is('gallery') ? "current_page_item" : "" }}" aria-current="{{ Request::is('gallery') ? "page" : "" }}">
+                <a href="{{route('gallery.index')}}">
                     Photos
                 </a>
             </li>
-            <li itemprop="name" class="itemMenu {{ Request::is('restaurant') ? "current_page_item" : "" }}" aria-current="{{ Request::is('restaurant') ? "page" : "" }}">
-                <a itemprop="url" href="{{route('restaurant.index')}}">
+            <li class="itemMenu {{ Request::is('restaurant') ? "current_page_item" : "" }}" aria-current="{{ Request::is('restaurant') ? "page" : "" }}">
+                <a href="{{route('restaurant.index')}}">
                     Restaurant
                 </a>
             </li>
-            <li itemprop="name" class="itemMenu {{ Request::is('about') ? "current_page_item" : "" }}" aria-current="{{ Request::is('about') ? "page" : "" }}">
-                <a itemprop="url" href="{{route('about.index')}}">
+            <li class="itemMenu {{ Request::is('about') ? "current_page_item" : "" }}" aria-current="{{ Request::is('about') ? "page" : "" }}">
+                <a href="{{route('about.index')}}">
                     À propos
                 </a>
             </li>
-            <li itemprop="name" class="itemMenu {{ Request::is('contact') ? "current_page_item" : "" }}" aria-current="{{ Request::is('contact') ? "page" : "" }}">
-                <a itemprop="url" href="{{route('contact.index')}}">
+            <li class="itemMenu {{ Request::is('contact') ? "current_page_item" : "" }}" aria-current="{{ Request::is('contact') ? "page" : "" }}">
+                <a href="{{route('contact.index')}}">
                     Contact
                 </a>
             </li>
-            <li itemprop="name" class="containerBtnTickets btnTicketsMenu">
-                <a itemprop="url" href="{{route('tickets.index')}}" class="btnTickets">
+            <li class="containerBtnTickets btnTicketsMenu">
+                <a href="{{route('tickets.index')}}" class="btnTickets">
                     Billets
                 </a>
             </li>
         </ul>
     </div>
 </nav>
-</header>
-<main role="main">
+<main>
     @yield('content')
 </main>
 <footer>
@@ -133,7 +132,7 @@
                     </p>
                 </div>
             </section>
-            <section>
+            <section itemscope itemtype="https://schema.org/Place">
                 <div>
                     <div class="pictoLocationFooter">
                     </div>
@@ -141,13 +140,13 @@
                         Où ?
                     </h3>
                 </div>
-                <div class="textPracticalInformation" itemscope itemtype="https://schema.org/Place">
+                <div class="textPracticalInformation" itemprop="address" itemscope itemtype="https://schema.org/Place">
                     <div>
                         <p>
                             À la salle des moines,
                         </p>
-                        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                            <span itemprp="streetAdress">Val-Saint-Lambert</span>, <span itemprop="postalCode">4540</span> <span itemprop="addressLocality">Amay</span>
+                        <p itemprop="streetAddress">
+                            Val-Saint-Lambert, <span itemprop="postalCode">4540</span> Amay
                         </p>
                     </div>
                 </div>

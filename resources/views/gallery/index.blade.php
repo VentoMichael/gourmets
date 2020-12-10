@@ -1,34 +1,34 @@
 @extends('layouts.app')
 @section('content')
     <section class="sectionContainerHome">
-        <div class="containerHome" itemscope itemtype="https://schema.org/Thing">
+        <div class="containerHome">
             <div class="containerPresentationHome">
                 <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="{{route('tickets.index')}}" title="Billets">Billet</a>
+                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
                 </div>
                 <div class="containerTitleHome">
                     <div>
-                        <h2 aria-level="2" itemprop="name" class="titleExposant">
+                        <h2 aria-level="2" class="titleExposant">
                             Revivez notre derniére édition
                         </h2>
                     </div>
                 </div>
                 <div class="containerImagesHome">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
-                    <img itemprop="image" src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
+                    <img src="resources/img/ja-ma--gOUx23DNks-unsplash.jpg"
                          srcset="resources/img/ja-ma--gOUx23DNks-unsplash_small.jpg 320w, resources/img/ja-ma--gOUx23DNks-unsplash.jpg 640w"
                          sizes="100vw" alt="Image du salon du marché des gourmets">
                 </div>
             </div>
-            <div itemprop="description" class="containerTextHome">
+            <div class="containerTextHome">
                 <p>
                     Au marché des gourmets d’Amay, nous receuillons <b>les meilleus moments</b> des différents marchés
                     sous <b>différents clichés</b>, listés ci-dessous.
@@ -90,25 +90,6 @@
             <img src="resources/img/sausage.jpg"
                  srcset="resources/img/sausage_small.jpg 320w, resources/img/sausage.jpg 640w"
                  sizes="100vw" alt="Image de saucissons">
-        </div>
-        <div class="containerPaginate">
-            <ul class="listPaginate">
-                <li class="currentPaginate">
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    ...
-                </li>
-                <li>
-                    <a href="#">12</a>
-                </li>
-            </ul>
         </div>
     </section>
 @endsection

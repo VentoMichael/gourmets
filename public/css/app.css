@@ -548,15 +548,15 @@ footer {
     right: -5px;
     width: 21px;
     text-indent: -9999px;
-    -webkit-transition: .1s;
-    -o-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
     font-weight: 700;
     z-index: 1;
     letter-spacing: .6px
 }
 
-.ctaTickets:hover {
+.ctaTicketsHover {
     width: 83px;
     color: #fff;
     text-indent: 30px
@@ -828,7 +828,7 @@ small {
 }
 
 .menu li:nth-child(1) {
-    margin: 0;
+    margin-top: 0
 }
 
 .navbar .navbrand .burger-close {
