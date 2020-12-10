@@ -21,8 +21,8 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard.index');
 Route::get('/exposants', [ExposantController::class, 'index'])->name('exposants.index');
-Route::get('/exposants/add', [ExposantController::class, 'become'])->name('become.index');
-Route::get('/exposants/a', [ExposantController::class, 'show'])->name('show.index');
+Route::get('/exposants/add', [ExposantController::class, 'become'])->name('expoBecome.index');
+Route::get('/exposants/a', [ExposantController::class, 'show'])->name('expoShow.index');
 
 
 Route::get('/gallery', [GalleryController::class, 'index'])->name('gallery.index');

@@ -38,7 +38,7 @@
                     Alors, n’hésitez pas à nous rendre visite à Amay lors de cette 21<sup>e</sup> édition.
                 </p>
                 <div>
-                    <a href="#" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
+                    <a href="{{route('expoBecome.index')}}" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             </p>
         </div>
         <div class="containerButtonExpo">
-            <a href="#" class="btnCta btnExposant">Devenir exposant <span class="arrowCta"></span></a>
+            <a href="{{route('expoBecome.index')}}" class="btnCta btnExposant">Devenir exposant <span class="arrowCta"></span></a>
         </div>
     </div>
     <section>
@@ -124,7 +124,7 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
+                    <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
                 </div>
             </section>
             <section class="containerExposant">
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
+                    <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la Sicile <span class="arrowCta"></span></a>
                 </div>
             </section>
         </div>

@@ -38,7 +38,7 @@
                     Alors, n’hésitez pas à nous rendre visite à Amay lors de cette 21<sup>e</sup> édition.
                 </p>
                 <div>
-                    <a href="#" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
+                    <a href="{{route('expoBecome.index')}}" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
                 </div>
             </div>
         </div>
@@ -61,39 +61,37 @@
         </h2>
         <div class="formContactContainer formBecomeContainer">
             <form action="#" method="get" class="formContact formBecomeExpo">
-                <div>
-                    <div class="containerInput">
+                <div class="containerInputLabel">
+                    <div class="containerInput containerInputBecomeExpo">
                         <label for="nameMarket">Nom du commerce</label>
                         <input type="text" name="nameMarket" id="nameMarket" required
                                placeholder="Vins noble de Sicile">
                     </div>
 
-                    <div>
-                        <div class="containerInput">
-                            <label for="phone">Téléphone</label>
-                            <input type="text" name="phone" id="phone" placeholder="0494 827 265">
-                        </div>
+                    <div class="containerInput containerInputBecomeExpo">
+                        <label for="phone">Téléphone</label>
+                        <input type="text" name="phone" id="phone" placeholder="0494 827 265">
                     </div>
                 </div>
-                <div>
-                    <div class="containerInput">
+                <div class="containerInputLabel">
+                    <div class="containerInput containerInputBecomeExpo">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" required placeholder="lardomarco@gmail.com">
                     </div>
 
-                    <div class="containerInput">
+                    <div class="containerInput containerInputBecomeExpo">
                         <label for="website">Site internet</label>
                         <input type="text" name="website" id="website" placeholder="https://noblesicile.com">
                     </div>
                 </div>
-                <div>
-                    <div class="containerInput">
+                <div class="containerInputLabel">
+                    <div class="containerInput containerInputBecomeExpo">
                         <label for="localisation">Adresse et n°</label>
                         <input type="text" name="localisation" id="localisation" required
                                placeholder="Rue blanche, 3, bp 2">
                     </div>
 
-                    <div class="containerInput">
+                    <div class="containerInput containerInputBecomeExpo">
                         <label for="country">Pays</label>
                         <select name="country" class="selectTicket selectCountry" id="country">
                             <option value="" disabled selected hidden class="defaultSelectOption">Sicile</option>
@@ -102,14 +100,14 @@
                         </select>
                     </div>
                 </div>
-                <div>
-                    <div class="containerInput">
+                <div class="containerInputLabel">
+                    <div class="containerInput containerInputBecomeExpo">
                         <label for="postalCode">Code postal</label>
                         <input type="number" name="postalCode" id="postalCode" required
                                placeholder="Rue blanche, 3, bp 2">
                     </div>
 
-                    <div class="containerInput">
+                    <div class="containerInput containerInputBecomeExpo">
                         <label for="tags">Tags</label>
                         <select name="tags" class="selectTicket selectCountry" id="tags">
                             <option value="" disabled selected hidden class="defaultSelectOption">Vins</option>
@@ -144,16 +142,18 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="containerInput">
-                        <label for="message">Descriptif des produits que je souhaiterais présenter durant le salon</label>
-                        <textarea id="message" name="message" placeholder="Ce sont des vins typiques de la Sicile, réaliser près du volcan Etna, le vin est autant meilleur que les vins fabriqués autre part que près d'un volcan ..."
+                <div class="containerTextAreaBecomeExpo">
+                    <div class="containerInput containerInputTextArea">
+                        <label for="message">Descriptif des produits que je souhaiterais présenter durant le
+                            salon</label>
+                        <textarea id="message" name="message"
+                                  placeholder="Ce sont des vins typiques de la Sicile, réaliser près du volcan Etna, le vin est autant meilleur que les vins fabriqués autre part que près d'un volcan ..."
                                   rows="10"></textarea>
                     </div>
                     <span>256 caractères max</span>
                 </div>
-                <div>
-                    <div class="containerInput">
+                <div class="containerTextAreaBecomeExpo containerCommentsOrgany">
+                    <div class="containerInput containerInputTextArea">
                         <label for="message">Commentaires pour les organisateurs</label>
                         <textarea id="message" name="message" placeholder="Commentaire(s) éventuel(s) ..."
                                   rows="10"></textarea>

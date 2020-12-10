@@ -36,7 +36,7 @@
                 <p>
                     Alors, n’hésitez pas à nous rendre visite à Amay lors de cette 21<sup>e</sup> édition.
                 <div>
-                    <a href="#" class="btnCta">Acheter un billet <span class="arrowCta"></span></a>
+                    <a href="{{route('tickets.index')}}" class="btnCta">Acheter un billet <span class="arrowCta"></span></a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,6 @@
             <p class="titleForm">
                 Le marché des gourmets
             </p>
-            <!-- Barre -->
             <ul>
                 <li class="infoContactDate">24, 25 mars 2021</li>
                 <li class="infoContactPlace">À la salle des moines, Val-Saint-Lambert, 4450 Amay</li>

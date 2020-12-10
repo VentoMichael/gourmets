@@ -36,7 +36,7 @@
                 <p>
                     Alors, n’hésitez pas à nous rendre visite à Amay lors de cette 21<sup>e</sup> édition.
                 <div>
-                    <a href="#" class="btnCta">Acheter un billet <span class="arrowCta"></span></a>
+                    <a href="{{route('tickets.index')}}" class="btnCta">Acheter un billet <span class="arrowCta"></span></a>
                 </div>
             </div>
         </div>

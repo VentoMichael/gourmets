@@ -215,10 +215,10 @@ ul .btnTickets {
 
 .containerFormulary input, .containerFormulary textarea,.formContact select {
     padding: 10px;
-    border: none;
     box-shadow: var(--shadow);
     font-family: 'opensansB', sans-serif;
     font-size: 1rem;
+    border: 1px solid #f2f2f2;
 }
 
 .containerFormulary ul {
@@ -403,7 +403,7 @@ div .containerShoppingCart{
 }
 
 footer {
-    margin: 0 1rem;
+    margin: 1rem;
 }
 
 .containerPracticalInformation section {
@@ -971,13 +971,25 @@ select > option{
     border: solid 1px transparent;
     text-align: center;
 }
-
+.moduleTagExpo{
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin:0 5px;
+    font-family: 'opensans',sans-serif;
+}
+.moduleTagExpo:nth-child(1){
+   margin-left: 0;
+}
+.containerModulesTagsExpo{
+    display: flex;
+    margin-top: 10px;
+}
 .tagsContainer {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 1rem 0;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .tagsContainer div {
@@ -1182,6 +1194,68 @@ option {
     margin-top: 0;
     padding-top: 0;
 }
+
+.containerTextAreaBecomeExpo span{
+    font-family: 'opensans',sans-serif;
+    font-size: .8rem;
+}
+.containerInputTextArea{
+    margin-bottom: 5px;
+}
+.containerCommentsOrgany{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.containerInformationsPerso{
+    text-align: initial;
+}
+.containerInformationsPerso .label {
+    color: black;
+    font-family: "opensansB",sans-serif;
+}
+.infoPersoExpo{
+    color: #595959;
+}
+.containerInformationsPerso div {
+    margin: 30px 0;
+}
+.infoPersoExpo a {
+    font-family: "opensans", 'sans-serif';
+}
+.containerInformationsPerso div:nth-child(1){
+    margin-top: 0;
+}
+.containerInformationsPerso div:last-child{
+    margin-bottom: 0;
+}
+.containerExpoPlaceTagInfo{
+    text-align: initial;
+    margin-top: 50px;
+    position: relative;
+    padding-top: 50px;
+}
+.containerExpoPlaceTagInfo:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 50%;
+    height: 3px;
+    background: #F0F0F0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.containerTagsExpo {
+    margin-top: 40px;
+}
+.containerTagsExpo .label{
+    font-family: "opensansB", 'sans-serif';
+}
+.ctaVisitWebsite{
+    margin: 50px 0 0;
+}
 @media only screen and (min-width: 650px) {
     .containerImagesHome {
         max-width: 500px;
@@ -1295,6 +1369,21 @@ option {
         margin-bottom: 0;
         align-self: end;
     }
+
+    .containerTextAreaBecomeExpo{
+        position: relative;
+    }
+    .containerTextAreaBecomeExpo span{
+        position: absolute;
+        top: 5px;
+        font-family: 'opensans',sans-serif;
+        right: 0;
+        font-size: .8rem;
+    }
+    .containerTextAreaBecomeExpo label{
+        margin-right: 130px;
+        max-width: 500px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -1310,7 +1399,7 @@ option {
     }
 
     .containerMenu {
-        padding: 3rem 0;
+        padding: 3rem 2rem;
     }
 
     .open {
@@ -1321,11 +1410,21 @@ option {
         border: 0;
     }
 
+    .containerPersoExpo{
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 50px;
+    }
+    .ctaExpoPerso{
+        margin: 50px 0;
+    }
+    .ctaVisitWebsite{
+        margin-bottom: 0;
+    }
     .searchFilter {
         position: absolute;
         right: 10px;
     }
-
     .searchFilterActif {
         position: inherit;
         right: 0;
@@ -1393,7 +1492,30 @@ option {
     .formContact:before {
         display: none;
     }
-
+    .containerInputLabel{
+        display: flex;
+        justify-content:space-between;
+    }
+    .formBecomeContainer{
+        width: 100%;
+        margin-left: 0;
+    }
+    .containerInputBecomeExpo{
+        min-width: 40%;
+    }
+    .containerButtonsRadio{
+        max-width: 40%;
+    }
+    .containerExpoPlaceTagInfo:before {
+         display: none;
+     }
+    .containerExpoPlaceTagInfo{
+        margin-top: 0;
+        padding-top: 0;
+        height: fit-content;
+        position: sticky;
+        top: 50px;
+    }
 }
 
 @media only screen and (min-width: 950px) {

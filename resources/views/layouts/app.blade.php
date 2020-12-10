@@ -139,7 +139,7 @@
             </section>
         </div>
     </section>
-    <a href="/">
+    <a href="{{route('dashboard.index')}}">
         <img class="logoFooter" src="../resources/svg/Logo_club.png" alt="Logo du marché des gourmets">
     </a>
     <div>

@@ -54,7 +54,7 @@
                     pays et régions se sont succédé comme notamment : l'Irlande, le Portugal, l'Italie et tant d’autres.
                 </p>
                 <div>
-                    <a href="#" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
+                    <a href="{{route('expoBecome.index')}}" class="btnCta">Devenir exposant <span class="arrowCta"></span></a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                         monde.
                     </p>
                     <div class="containerCtaButton">
-                        <a href="#" class="btnCta btnCtaResto">Acheter un billet <span class="arrowCta"></span></a>
+                        <a href="{{route('tickets.index')}}" class="btnCta btnCtaResto">Acheter un billet <span class="arrowCta"></span></a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                             dégustations</b> et de rencontres et ce dans la bonne humeur bien sûr !
                     </p>
                     <div class="containerCtaButton">
-                        <a href="#" class="btnCta">Acheter un billet <span class="arrowCta"></span></a>
+                        <a href="{{route('tickets.index')}}" class="btnCta">Acheter un billet <span class="arrowCta"></span></a>
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@
                         goût, nous mettons tout en oeuvre pour que votre visite se passe pour le mieux.
                     </p>
                     <div class="containerCtaButton">
-                        <a href="#" class="btnCta btnCtaResto">Notre restaurant <span class="arrowCta"></span></a>
+                        <a href="{{route('restaurant.index')}}" class="btnCta btnCtaResto">Notre restaurant <span class="arrowCta"></span></a>
                     </div>
                 </div>
 
@@ -183,7 +183,7 @@
                                 et
                                 unique!</p>
                             <div>
-                                <a href="#" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
+                                <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
                             </div>
                         </div>
                     </div>
@@ -220,13 +220,13 @@
                                 et
                                 unique!</p>
                             <div>
-                                <a href="#" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
+                                <a href="{{route('expoShow.index')}}" class="btnCta">Vins nobles de la sicile <span class="arrowCta"></span></a>
                             </div>
                         </div>
                     </div>
                 </section>
                 <div class="containerAllExposants">
-                    <a href="#" class="btnCta">Tous les exposants <span class="arrowCta"></span></a>
+                    <a href="{{route('exposants.index')}}" class="btnCta">Tous les exposants <span class="arrowCta"></span></a>
                 </div>
             </div>
         </div>

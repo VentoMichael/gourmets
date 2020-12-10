@@ -1,4 +1,5 @@
-//menu
+
+// menu
 const burgerMenu = document.getElementById("burger");
 const navbarMenu = document.getElementById("menu");
 const containerTicketsHome = document.getElementById("containerTicketsHome")
@@ -16,7 +17,6 @@ ctaTickets.addEventListener("mouseover", (e) => {
 ctaTickets.addEventListener("mouseleave", (e) => {
     e.target.classList.remove("ctaTicketsHover")
 })
-
 
 
 //form search

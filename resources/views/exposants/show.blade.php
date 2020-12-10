@@ -47,12 +47,12 @@
             <h2 class="hidden">
                 Informations personnelles de Vins nobles de Sicile
             </h2>
-            <div>
+            <div class="containerInformationsPerso">
                 <div>
                     <p class="label">
                         Nom du commerce
                     </p>
-                    <p>
+                    <p class="infoPersoExpo">
                         Vins noble de la Sicile
                     </p>
                 </div>
@@ -60,7 +60,7 @@
                     <p class="label">
                         Adresse et n°
                     </p>
-                    <p>
+                    <p class="infoPersoExpo">
                         Rue blanche, 4, bp 10
                     </p>
                 </div>
@@ -68,7 +68,7 @@
                     <p class="label">
                         Email
                     </p>
-                    <p>
+                    <p class="infoPersoExpo">
                         <a href="mailto:noblessicile@hotmail.com"></a>noblessicile@hotmail.com
                     </p>
                 </div>
@@ -76,7 +76,7 @@
                     <p class="label">
                         Pays
                     </p>
-                    <p>
+                    <p class="infoPersoExpo">
                         Sicile
                     </p>
                 </div>
@@ -84,7 +84,7 @@
                     <p class="label">
                         Téléphone
                     </p>
-                    <p>
+                    <p class="infoPersoExpo">
                         <a href="tel:+32494827265">0494 827 265</a>
                     </p>
                 </div>
@@ -92,7 +92,7 @@
                     <p class="label">
                         Site internet
                     </p>
-                    <p>
+                    <p class="infoPersoExpo">
                         <a href="http://www.champagne-leseurre.com"></a>http://www.champagne-leseurre.com
                     </p>
                 </div>
@@ -100,36 +100,38 @@
                     <p class="label">
                         Descriptif des produits
                     </p>
-                    <p>
+                    <p class="infoPersoExpo">
                         Le domaine Murgo est situé dans une position privilégiée sur le versant sud-est de l'Etna sur la
                         côte est de la Sicile, à une hauteur de 500 mètres au-dessus du niveau de la mer.
                     </p>
                 </div>
+
             </div>
-            <div>
-                <!-- Google map -->
+            <div class="containerExpoPlaceTagInfo">
                 <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.353993366886!2d4.29603331574703!3d50.88015827953696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c16fcb77f069%3A0xf913948a7a585e16!2sZone1%20Research%20Park%20120%2C%201731%20Asse!5e0!3m2!1sfr!2sbe!4v1607590415394!5m2!1sfr!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="containerTagsExpo">
                     <p class="label">
                         Tags associé aux produits
                     </p>
-                    <div class="tagsContainer">
-                        <div class="moduleTag">
+                    <div class="containerModulesTagsExpo">
+                        <div class="moduleTag moduleTagExpo">
                             Vins
                         </div>
-                        <div class="moduleTag">
+                        <div class="moduleTag moduleTagExpo">
                             Sicile
                         </div>
-                        <div class="moduleTag">
+                        <div class="moduleTag moduleTagExpo">
                             Multifruits
                         </div>
-                        <div class="moduleTag">
+                        <div class="moduleTag moduleTagExpo">
                             Bio
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <a href="#" class="btnCta MenuCta">Visiter son site internet <span class="arrowCta"></span></a>
+                <div>
+                    <a href="#" class="btnCta MenuCta ctaExpoPerso ctaVisitWebsite">Visiter son site internet <span class="arrowCta"></span></a>
+                </div>
             </div>
         </div>
     </section>
