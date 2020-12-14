@@ -81,47 +81,63 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
+/***/ "./resources/js/slide.js":
+/*!*******************************!*\
+  !*** ./resources/js/slide.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// menu
-var burgerMenu = document.querySelector(".burgerId");
-var navbarMenu = document.querySelector(".menuId");
-var containerTicketsHome = document.querySelector(".containerTicketsHomeId");
-var ctaTickets = document.querySelector(".ctaTicketsId");
-burgerMenu.addEventListener("click", function (e) {
-  e.preventDefault();
-  navbarMenu.classList.toggle("active");
-  burgerMenu.classList.toggle("active");
-  containerTicketsHome.classList.toggle("notVisible");
-  document.querySelector(".navbarId").classList.toggle("menuOpenNavbar");
+//slide
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+document.getElementById("next").addEventListener("click", function () {
+  showSlides(slideIndex += 1);
 });
-ctaTickets.addEventListener("mouseover", function (e) {
-  e.target.classList.add("ctaTicketsHover");
+document.getElementById("prev").addEventListener("click", function () {
+  showSlides(slideIndex -= 1);
 });
-ctaTickets.addEventListener("mouseleave", function (e) {
-  e.target.classList.remove("ctaTicketsHover");
-});
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    console.log(slides);
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+}
 
 /***/ }),
 
-/***/ 0:
-/*!***********************************!*\
-  !*** multi ./resources/js/app.js ***!
-  \***********************************/
+/***/ 1:
+/*!*************************************!*\
+  !*** multi ./resources/js/slide.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/vento/test/gourmet/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/vento/test/gourmet/resources/js/slide.js */"./resources/js/slide.js");
 
 
 /***/ })

@@ -81,47 +81,47 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
+/***/ "./resources/js/formSearch.js":
+/*!************************************!*\
+  !*** ./resources/js/formSearch.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// menu
-var burgerMenu = document.querySelector(".burgerId");
-var navbarMenu = document.querySelector(".menuId");
-var containerTicketsHome = document.querySelector(".containerTicketsHomeId");
-var ctaTickets = document.querySelector(".ctaTicketsId");
-burgerMenu.addEventListener("click", function (e) {
-  e.preventDefault();
-  navbarMenu.classList.toggle("active");
-  burgerMenu.classList.toggle("active");
-  containerTicketsHome.classList.toggle("notVisible");
-  document.querySelector(".navbarId").classList.toggle("menuOpenNavbar");
-});
-ctaTickets.addEventListener("mouseover", function (e) {
-  e.target.classList.add("ctaTicketsHover");
-});
-ctaTickets.addEventListener("mouseleave", function (e) {
-  e.target.classList.remove("ctaTicketsHover");
+//form search
+var formSearchInput = document.querySelector(".expo-searchId");
+var searchFilter = document.querySelector(".searchFilterId");
+var labelBefore = document.querySelector(".searchFilter");
+var containerFilters = document.querySelector(".containerFilters");
+var allDivsFilters = document.querySelectorAll(".containerFilters span");
+console.log(document.getElementById("searchFilter"));
+labelBefore.addEventListener('click', function () {
+  labelBefore.classList.add('loupeItem');
+  formSearchInput.classList.add('open');
+  formSearchInput.focus();
+  searchFilter.classList.add('searchFilterActif');
+  containerFilters.classList.add('containerFiltersActif');
+
+  for (var i = 0; i <= allDivsFilters.length; i++) {
+    allDivsFilters[i].classList.add('filtersExposants');
+  }
 });
 
 /***/ }),
 
-/***/ 0:
-/*!***********************************!*\
-  !*** multi ./resources/js/app.js ***!
-  \***********************************/
+/***/ 2:
+/*!******************************************!*\
+  !*** multi ./resources/js/formSearch.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/vento/test/gourmet/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/vento/test/gourmet/resources/js/formSearch.js */"./resources/js/formSearch.js");
 
 
 /***/ })

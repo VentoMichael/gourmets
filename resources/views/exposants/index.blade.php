@@ -194,3 +194,4 @@
         </div>
     </section>
 @endsection
+<script type="text/javascript" src="{{ asset('js/formSearch.js') }}"></script>
