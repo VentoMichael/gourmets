@@ -112,6 +112,13 @@ p {
     padding: 0 5px
 }
 
+.menu li:nth-child(1) a:hover {
+    color: #000;
+    border-bottom: 3px solid #20004f;
+    border: 0;
+    padding: 0 5px
+}
+
 .menu a {
     padding: 0 5px;
     -webkit-transition: .1s;
@@ -529,7 +536,6 @@ footer {
     background: url(../resources/svg/placeholder.svg) no-repeat center
 }
 
-
 .containerPresentationHome {
     margin-top: 90px
 }
@@ -828,7 +834,7 @@ small {
 }
 
 .menu li:nth-child(1) {
-    margin-top: 0
+    margin: 0 0 5px 2rem
 }
 
 .navbar .navbrand .burger-close {
@@ -886,7 +892,7 @@ ul .btnTicketsMenu {
 .navbar .menu.active {
     width: 100%;
     height: 100%;
-    margin: -50px 0 1rem;
+    margin: -50px 0 1rem
 }
 
 .navbar .social {
@@ -974,6 +980,9 @@ ul .btnTicketsMenu {
 
 .containerFiltersAll {
     background: var(--purpleGradient);
+    margin: 0
+}
+.containerExpo{
     margin: 0 -2rem;
 }
 
@@ -1043,7 +1052,7 @@ select > option {
 .containerFilters span {
     border: none;
     padding: 0;
-    position: relative;
+    position: relative
 }
 
 .search::-webkit-input-placeholder {
@@ -1076,10 +1085,10 @@ select > option {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+    margin-top: 50px
 }
-
 .sectionContainerExposants {
-    margin: 4rem 2rem 1rem;
+    margin: 4rem 2rem 1rem
 }
 
 .containerExposant img {
@@ -1168,6 +1177,10 @@ select > option {
     font-family: opensans, sans-serif;
     border: 1px solid #000;
     margin: 0 10px
+}
+
+.buttonSearch {
+    display: none
 }
 
 .moduleTag:before {
@@ -1299,10 +1312,10 @@ option {
     max-width: 250px;
     text-align: initial;
     top: 23px;
-    background: -webkit-linear-gradient(right, #20004F, #47002C);
+    background: -webkit-linear-gradient(right, #20004f, #47002c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: var(--purpleGradient);
+    color: var(--purpleGradient)
 }
 
 .containerSandwichs:before {
@@ -1466,15 +1479,17 @@ option {
     left: 0;
     right: 0
 }
-.containerFilters form button{
-    background: white;
+
+.containerFilters form button {
+    background: #fff;
     padding: 1rem 2rem;
-    cursor:pointer;
+    cursor: pointer;
     border: none;
-    font-family: 'opensansB',sans-serif;
+    font-family: opensansB, sans-serif;
     margin: 5px 2rem 20px;
-    font-size: 1rem;
+    font-size: 1rem
 }
+
 .containerTagsExpo {
     margin-top: 40px
 }
@@ -1490,20 +1505,19 @@ option {
 .containerPaginate {
     display: flex;
     justify-content: flex-end;
-    margin-top: 50px;
+    margin-top: 50px
 }
 
 .listPaginate {
     display: flex;
     box-shadow: var(--shadow);
     padding: 15px 35px;
-    font-family: "opensans", 'sans-serif';
+    font-family: opensans, sans-serif;
     font-size: 1.2rem;
-    position: relative;
+    position: relative
 }
 
-.listPaginate:after,
-.listPaginate:before {
+.listPaginate:after, .listPaginate:before {
     content: "";
     position: absolute;
     display: block;
@@ -1514,33 +1528,36 @@ option {
     margin-top: auto;
     margin-bottom: auto;
     bottom: 0;
-    cursor: pointer;
+    cursor: pointer
 }
-.listPaginate a{
-    color: black;
+
+.listPaginate a {
+    color: #000
 }
-.listPaginate a:hover{
-    border-bottom: 2px solid black;
+
+.listPaginate a:hover {
+    border-bottom: 2px solid #000
 }
+
 .listPaginate:after {
     background-image: url(../resources/svg/arrowBlack.svg);
     top: -2px;
-    right: 15px;
+    right: 15px
 }
 
 .listPaginate:before {
     background-image: url(../resources/svg/arrowBlackLeft.svg);
     left: 15px;
-    top: -3px;
+    top: -3px
 }
 
 .listPaginate li {
-    margin: 0 10px;
+    margin: 0 10px
 }
 
 .currentPaginate {
-    border-bottom: 2px solid black;
-    padding-bottom: 3px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px
 }
 
 @media only screen and (min-width: 650px) {
@@ -1656,7 +1673,9 @@ option {
         align-self: center;
         min-width: 250px
     }
-
+    .searchFilterId label{
+        right: 0;
+    }
     .containerBecomeExposant {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -1698,7 +1717,6 @@ option {
         margin-right: 130px;
         max-width: 500px
     }
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -1711,7 +1729,7 @@ option {
         right: 5px;
         left: inherit;
         top: 7px;
-        cursor:pointer
+        cursor: pointer
     }
 
     .containerMenu {
@@ -1774,13 +1792,15 @@ option {
         background: url(../resources/svg/arrowDown.svg) no-repeat 92% 50%;
         background-size: 20px
     }
+
     .containerFilters button {
         margin-right: auto;
-        margin-left: 15px;
+        margin-left: 15px
     }
+
     .countriesFilter, .pageFilter, .productsFilter, .searchFilter {
         margin: 15px;
-        min-width: 25%
+        min-width: 28%
     }
 
     .filtersExposants {
@@ -1819,18 +1839,22 @@ option {
         max-width: 1050px;
         margin: 50px auto auto
     }
-    .containerFilters form:nth-child(1){
+
+    .containerFilters form:nth-child(1) {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100%
     }
-    .container3firstFilters{
-        display: flex;
+
+    .container3firstFilters {
+        display: flex
     }
-    .containerFilters form button{
+
+    .containerFilters form button {
         max-width: 400px;
-        margin-left: 15px;
+        margin-left: 15px
     }
+
     .formContact {
         padding-top: 0;
         margin-top: 0
@@ -1883,7 +1907,7 @@ option {
 
     .principalTitle {
         position: inherit;
-        padding: 5px;
+        padding: 5px
     }
 
     .containerPracticalInformation {
@@ -2031,7 +2055,7 @@ option {
         grid-gap: 100px
     }
 
-    .containerAboutUs, .containerFilters, .containerHistorical,.containerPaginate {
+    .containerAboutUs, .containerFilters, .containerHistorical, .containerPaginate {
         max-width: 1100px;
         margin: auto
     }

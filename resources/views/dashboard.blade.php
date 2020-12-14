@@ -4,8 +4,8 @@
         <div class="containerHome">
 
             <div class="containerPresentationHome">
-                <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
+                <div class="containerTicketsHome containerTicketsHomeId" id="containerTicketsHome">
+                    <a class="ctaTickets ctaTicketsId" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">

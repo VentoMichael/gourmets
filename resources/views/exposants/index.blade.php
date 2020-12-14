@@ -3,8 +3,8 @@
     <section class="sectionContainerHome">
         <div class="containerHome">
             <div class="containerPresentationHome">
-                <div class="containerTicketsHome" id="containerTicketsHome">
-                    <a class="ctaTickets" id="ctaTickets" href="#" title="Billets">Billet</a>
+                <div class="containerTicketsHome containerTicketsHomeId" id="containerTicketsHome">
+                    <a class="ctaTickets ctaTicketsId" id="ctaTickets" href="#" title="Billets">Billet</a>
                 </div>
                 <div class="logo logoHome" role="banner">
                     <img src="../resources/svg/Logo_club.png" alt="Logo des marchés des gourmets">
@@ -60,7 +60,7 @@
         <h2 aria-level="2" class="hidden">
             Les différents Exposants
         </h2>
-        <div class="containerFiltersAll">
+        <div class="containerFiltersAll containerExpo">
             <div class="containerFilters">
                 <form action="#">
                     <div class="container3firstFilters">
@@ -98,11 +98,11 @@
                     </button>
                 </form>
                 <form action="#">
-                    <span class="searchFilter" id="searchFilter" role="search">
+                    <span class="searchFilter searchFilterId" id="searchFilter" role="search">
                         <label id="expoSearchLabel" for="expo-search">Chercher un exposant</label>
-                        <input class="search" type="search" spellcheck="false" id="expo-search" name="exposant"
+                        <input class="search expo-searchId" type="search" spellcheck="false" id="expo-searchId" name="exposant"
                                placeholder="Rob Harry ...">
-                        <button class="hidden">Rechercher l'exposant</button>
+                        <button class="buttonSearch hidden">Rechercher l'exposant</button>
                     </span>
                 </form>
             </div>

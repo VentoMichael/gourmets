@@ -25,10 +25,10 @@
 </head>
 <body>
 
-<nav class="navbar" id="navbar" role="navigation">
+<nav class="navbar navbarId" id="navbar" role="navigation">
     <div class="navbrand" role="banner">
         <div></div>
-        <div class="burger" id="burger" aria-label="menu">
+        <div class="burger burgerId" id="burger" aria-label="menu">
             <span class="burger-open">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
 					<g fill="rgba(78, 0, 47, 1)" fill-rule="evenodd">
@@ -45,7 +45,7 @@
         </div>
     </div>
     <div>
-        <ul class="menu" id="menu">
+        <ul class="menu menuId" id="menu">
             <li class="itemMenu">
                 <a href="{{route('dashboard.index')}}">
                     <h1 aria-level="1" class="principalTitle">Le marché des gourmets</h1>
