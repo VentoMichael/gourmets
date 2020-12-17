@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -115,13 +126,14 @@ ctaTickets.addEventListener("mouseleave", function (e) {
 /***/ }),
 
 /***/ 0:
-/*!***********************************!*\
-  !*** multi ./resources/js/app.js ***!
-  \***********************************/
+/*!***********************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/vento/test/gourmet/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Users/vento/test/gourmet/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/vento/test/gourmet/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })
